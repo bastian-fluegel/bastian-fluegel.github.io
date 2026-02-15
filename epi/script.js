@@ -1,18 +1,119 @@
 let letters = [];
 let typewriterCancel = false;
+let currentLetter = null; // für Frage-Modal
 const READ_STORAGE_KEY = "epistulae_seen_letters_v1";
+const PROFILE_STORAGE_KEY = "epistulae_profile_v1";
+
+const wanderingThoughts = [
+    "Das Staunen ist der Anfang der Weisheit.",
+    "Wer glaubt, etwas zu sein, hat aufgehört, etwas zu werden.",
+    "Ein ungeprüftes Leben ist nicht lebenswert.",
+    "In jedem Menschen brennt ein Licht, das wir suchen müssen.",
+    "Die Wege der Erkenntnis sind oft einsam.",
+    "Nur das Fragen hält den Geist wach.",
+    "Wahres Wissen kommt aus der Einsicht der eigenen Unwissenheit.",
+    "Der Weise zweifelt oft, der Narr niemals."
+];
 
 // Start der App
 async function init() {
     setupLegalModals();
+    setupQuestionModal();
 
     try {
         const response = await fetch('letters.json');
         letters = await response.json();
         normalizeSavedReadProgress();
-        loadNextLetter();
+        
+        // Onboarding-Check
+        const profile = getProfile();
+        if (!profile.onboardingDone) {
+            showOnboarding();
+        } else {
+            showWelcomeMessage(profile);
+            setTimeout(() => {
+                hideWelcomeMessage();
+                loadNextLetter();
+            }, 3000);
+        }
     } catch (e) {
         console.error("Fehler beim Laden der Briefe:", e);
+    }
+}
+
+// Profil-Verwaltung
+function getProfile() {
+    try {
+        const raw = localStorage.getItem(PROFILE_STORAGE_KEY);
+        if (!raw) return { name: "", gender: "", onboardingDone: false };
+        return JSON.parse(raw);
+    } catch {
+        return { name: "", gender: "", onboardingDone: false };
+    }
+}
+
+function saveProfile(profile) {
+    localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(profile));
+}
+
+// Onboarding anzeigen
+function showOnboarding() {
+    const overlay = document.getElementById('onboarding-overlay');
+    overlay.classList.remove('hidden');
+    overlay.setAttribute('aria-hidden', 'false');
+    
+    document.getElementById('story-next-btn').addEventListener('click', () => {
+        document.getElementById('onboarding-story').classList.add('hidden');
+        document.getElementById('onboarding-form').classList.remove('hidden');
+    });
+    
+    document.getElementById('profile-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('user-name').value.trim();
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+        
+        if (name && gender) {
+            saveProfile({
+                name: name,
+                gender: gender,
+                onboardingDone: true
+            });
+            
+            overlay.classList.add('hidden');
+            overlay.setAttribute('aria-hidden', 'true');
+            loadNextLetter();
+        }
+    });
+}
+
+// Willkommens-Nachricht für wiederkehrende Besuche
+function showWelcomeMessage(profile) {
+    const welcomeOverlay = document.getElementById('welcome-message');
+    const welcomeText = document.getElementById('welcome-text');
+    
+    welcomeText.innerText = `Sei gegrüßt, ${profile.name}. Sokrates hat über deine letzte Antwort nachgedacht und eine neue Frage für dich.`;
+    
+    welcomeOverlay.classList.remove('hidden');
+    welcomeOverlay.setAttribute('aria-hidden', 'false');
+}
+
+function hideWelcomeMessage() {
+    const welcomeOverlay = document.getElementById('welcome-message');
+    welcomeOverlay.classList.add('hidden');
+    welcomeOverlay.setAttribute('aria-hidden', 'true');
+}
+
+// Personalisierte Anrede generieren
+function getPersonalizedSalutation(gender, name) {
+    switch(gender) {
+        case 'm':
+            return `An den geschätzten ${name},`;
+        case 'f':
+            return `An die geschätzte ${name},`;
+        case 'n':
+            return `Sei gegrüßt, ${name},`;
+        default:
+            return `Mein Freund,`;
     }
 }
 
@@ -65,63 +166,120 @@ function getNextUnreadIndex() {
 function loadNextLetter() {
     typewriterCancel = false;
     const nextIdx = getNextUnreadIndex();
-
     const letter = letters[nextIdx];
+    
+    // Profil laden für personalisierte Anrede
+    const profile = getProfile();
+    let salutation;
+    
+    if (profile.onboardingDone && profile.name) {
+        salutation = getPersonalizedSalutation(profile.gender, profile.name);
+    } else {
+        // Fallback: allgemeine Anrede
+        const salutations = [
+            "Mein lieber Freund,",
+            "Teurer Freund,",
+            "Mein Freund,"
+        ];
+        salutation = salutations[nextIdx % salutations.length];
+    }
 
-    // Anrede – allgemein, wie in den Briefen
-    const salutations = [
-        "Mein lieber Freund,",
-        "Teurer Freund,",
-        "Mein Freund,"
-    ];
-    const salutation = salutations[nextIdx % salutations.length];
-
-    const contentEl = document.getElementById('letter-content');
-    const questionEl = document.getElementById('letter-question');
+    const textSpan = document.getElementById('typed-text');
+    const quillPen = document.getElementById('quill-pen');
     const signatureEl = document.getElementById('letter-signature');
-    const list = document.getElementById('options-list');
+    const answerBtn = document.getElementById('answer-question-btn');
 
-    // Layout sofort sichtbar: Anrede, leere Inhaltsfläche, Unterschrift-Platz, Trennlinie, leere Frage, drei Platzhalter-Buttons
     document.getElementById('salutation').innerText = salutation;
-    contentEl.innerText = "";
+    textSpan.innerText = "";
     signatureEl.innerText = "";
-    questionEl.innerText = "";
-    list.innerHTML = "";
+    quillPen.classList.remove('hidden');
+    answerBtn.classList.add('hidden');
 
-    letter.options.forEach((_, i) => {
-        const btn = document.createElement('button');
-        btn.className = "option-btn option-btn-placeholder";
-        btn.innerText = "\u00A0"; // geschütztes Leerzeichen als Platzhalter
-        btn.disabled = true;
-        list.appendChild(btn);
-    });
+    let text = letter.content;
+    if (profile.onboardingDone && profile.name) {
+        text = text.replace(/\[NAME\]/g, profile.name);
+    }
 
-    // Text per Typewriter schreiben (rekursives setTimeout, bricht nicht ab)
-    const text = letter.content;
     let index = 0;
 
-    function typeNext() {
-        if (typewriterCancel) return;
-        if (index < text.length) {
-            contentEl.innerText += text[index];
-            index++;
-            setTimeout(typeNext, 25);
-        } else {
-            signatureEl.innerText = "Sokrates";
-            questionEl.innerText = letter.question;
+    function getTypingDelay(char) {
+        let ms = Math.floor(Math.random() * (70 - 30 + 1) + 30);
+        if (char === '.' || char === ',') ms += 150;
+        return ms;
+    }
 
-            list.innerHTML = "";
-            letter.options.forEach((opt, i) => {
-                const btn = document.createElement('button');
-                btn.className = "option-btn";
-                btn.innerText = opt;
-                btn.onclick = () => selectOption(i);
-                list.appendChild(btn);
-            });
+    function typeNext() {
+        if (typewriterCancel) {
+            quillPen.classList.add('hidden');
+            return;
+        }
+        if (index < text.length) {
+            textSpan.innerText += text[index];
+            index++;
+            setTimeout(typeNext, getTypingDelay(text[index - 1]));
+        } else {
+            quillPen.classList.add('hidden');
+            signatureEl.innerText = "Sokrates";
+            currentLetter = letter;
+            answerBtn.classList.remove('hidden');
         }
     }
 
     typeNext();
+}
+
+function openQuestionModal() {
+    if (!currentLetter) return;
+    const modal = document.getElementById('question-modal');
+    const questionEl = document.getElementById('modal-question-text');
+    const list = document.getElementById('modal-options-list');
+
+    questionEl.innerText = currentLetter.question;
+    list.innerHTML = "";
+    currentLetter.options.forEach((opt, i) => {
+        const btn = document.createElement('button');
+        btn.className = "option-btn";
+        btn.innerText = opt;
+        btn.onclick = () => {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.getElementById('answer-question-btn').classList.add('hidden');
+            startWandering();
+        };
+        list.appendChild(btn);
+    });
+
+    modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
+}
+
+function startWandering() {
+    // Brief ausblenden, Wanderansicht zeigen
+    document.getElementById('active-letter').classList.add('hidden');
+    document.getElementById('wandering-view').classList.remove('hidden');
+    
+    const thoughtEl = document.getElementById('wandering-thought');
+    const randomThought = wanderingThoughts[Math.floor(Math.random() * wanderingThoughts.length)];
+    
+    thoughtEl.style.opacity = '0';
+    thoughtEl.innerText = randomThought;
+    
+    // Sanftes Einblenden des Gedankens
+    setTimeout(() => { thoughtEl.style.opacity = '1'; }, 100);
+
+    // Wanderung: 3 Sekunden sichtbar
+    setTimeout(() => {
+        thoughtEl.style.opacity = '0';
+        setTimeout(() => {
+            document.getElementById('wandering-view').classList.add('hidden');
+            document.getElementById('active-letter').classList.remove('hidden');
+            loadNextLetter();
+        }, 1500); // Zeit für Ausblenden
+    }, 3000);
+}
+
+function setupQuestionModal() {
+    document.getElementById('answer-question-btn').addEventListener('click', openQuestionModal);
 }
 
 function selectOption() {

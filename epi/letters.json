@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Mein lieber [NAME],\n\nIch sah heute Menschen in Germania, die in langen Schlangen vor einem Metallkasten standen.\n\nSie warteten geduldig, nur um bunte Papierstreifen gegen ihr tägliches Brot zu tauschen.\n\nSie wirkten gehetzt, als liefe ihnen die Zeit davon, obwohl sie doch nur warteten.",
+    "question": "Was glaubst du, ist der wahre Wert ihrer Mühe?",
+    "options": ["Das Brot allein", "Das Ansehen vor anderen", "Die gewonnene Zeit"],
+    "traits": ["Bescheidenheit", "Eitelkeit", "Zeitgeist"]
+  },
+  {
+    "content": "Heils dir, [NAME].\n\nEin junger Mann erklärte mir das Konzept der 'Karriere'. Er opfert seine Jugend, um im Alter im Überfluss zu ruhen.\n\nDoch wer garantiert ihm, dass das Alter ihn überhaupt erreicht?",
+    "question": "Wann, mein Freund, beginnt das gute Leben?",
+    "options": ["In diesem Augenblick", "Wenn das Ziel erreicht ist", "Es ist ein ewiger Kampf"],
+    "traits": ["Gegenwart", "Planung", "Stoik"]
+  },
+  {
+    "content": "[NAME],\n\nüberall sehe ich Orte, an denen Menschen ihre Körper stählen, als bereiteten sie sich auf eine Schlacht vor, die niemals kommt.\n\nDoch ihre Seelen lassen sie dabei oft im Unkraut verwildern.",
+    "question": "Was bedarf mehr der täglichen Übung?",
+    "options": ["Der kräftige Leib", "Die klare Seele", "Beides im Einklang"],
+    "traits": ["Disziplin", "Geistesschärfe", "Gleichgewicht"]
+  }
+]

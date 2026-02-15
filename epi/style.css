@@ -1,107 +1,375 @@
 :root {
-    --bg-color: #fdfcf7;
-    --text-color: #1a1a1a;
-    --brown-accent: #8b4513;
-    --light-brown: rgba(139, 69, 19, 0.08);
-    --parchment-bg: #f8f1e0;
+    --zen-cream: #f5f1e8;
+    --zen-stone: #3d3d3d;
+    --zen-bronze: #8b7355;
+    --zen-gold: #b8956a;
+    --zen-mist: rgba(184, 149, 106, 0.08);
+    --parchment: #ebe6d9;
+    --shadow-soft: rgba(61, 61, 61, 0.1);
 }
 
-* { box-sizing: border-box; }
-body { margin: 0; font-family: "Georgia", serif; background-color: #2c3e50; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-
-/* Handy Mockup */
-.phone-container { padding: 20px; }
-.phone-frame {
-    width: 375px; height: 812px; background: #000; border: 12px solid #333;
-    border-radius: 55px; position: relative; overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-}
-.notch {
-    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-    width: 160px; height: 30px; background: #333; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; z-index: 10;
+* { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
 }
 
-#app { width: 100%; height: 100%; background-color: var(--bg-color); display: flex; flex-direction: column; }
+body { 
+    font-family: "Crimson Text", "Georgia", serif; 
+    background: var(--zen-cream);
+    min-height: 100vh;
+    color: var(--zen-stone);
+}
 
-/* Toolbar */
-.toolbar { height: 85px; padding: 40px 20px 10px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
-.app-title { font-weight: bold; font-size: 1.2rem; color: var(--brown-accent); }
-#settings-btn { background: none; border: none; color: var(--brown-accent); cursor: pointer; padding: 5px; }
+#app { 
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: var(--zen-cream);
+    display: flex; 
+    flex-direction: column; 
+}
 
-/* Content & Scroll */
-#content-area { flex: 6; padding: 15px; overflow-y: auto; background-color: #eeebe3; }
+/* Toolbar - Minimalistisch, nur Titel */
+.toolbar { 
+    height: 85px; 
+    padding: 40px 20px 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-bottom: 1px solid var(--zen-mist);
+    background: linear-gradient(180deg, var(--zen-cream) 0%, transparent 100%);
+}
+.app-title { 
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 1.3rem; 
+    color: var(--zen-bronze);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Content & Scroll - Zen Atmosphere */
+#content-area { 
+    flex: 6; 
+    padding: 20px; 
+    overflow-y: auto; 
+    background: var(--zen-cream);
+}
+
+#content-area::-webkit-scrollbar {
+    width: 6px;
+}
+#content-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+#content-area::-webkit-scrollbar-thumb {
+    background: var(--zen-bronze);
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.reading-progress-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.reading-progress {
+    font-size: 0.9rem;
+    color: var(--zen-bronze);
+    opacity: 0.85;
+}
 
 .parchment-scroll {
-    background-color: var(--parchment-bg);
-    padding: 25px; border-radius: 8px; border: 1px solid #dcd0b9;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative;
+    background: var(--parchment);
+    padding: 30px; 
+    border-radius: 12px;
+    border: none;
+    box-shadow: 
+        0 2px 20px var(--shadow-soft),
+        inset 0 1px 0 rgba(255,255,255,0.5);
+    position: relative;
 }
 
 .main-text {
-    font-size: 1.2rem; line-height: 1.65; color: #2c2c2c;
-    white-space: pre-wrap; /* WICHTIG: Zeilenumbrüche aus JSON */
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: var(--zen-stone);
+    white-space: pre-wrap;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
-.italic-secondary { color: #777; font-style: italic; margin-bottom: 15px; }
-.divider { border: 0; border-top: 1px solid rgba(139, 69, 19, 0.15); margin: 25px 0; }
-.question-text { font-style: italic; color: var(--brown-accent); font-size: 1.1rem; text-align: center; margin-bottom: 20px; }
+.italic-secondary { 
+    color: var(--zen-bronze); 
+    font-style: italic; 
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.letter-signature {
+    margin-top: 28px;
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--zen-bronze);
+    font-size: 1rem;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.divider { 
+    border: 0; 
+    border-top: 1px solid var(--zen-mist);
+    margin: 30px 0;
+    opacity: 0.6;
+}
+.question-text { 
+    font-style: italic; 
+    color: var(--zen-bronze); 
+    font-size: 1.05rem; 
+    text-align: center; 
+    margin-bottom: 25px;
+    font-weight: 500;
+    line-height: 1.6;
+    min-height: 1.6em;
+}
 
 .option-btn {
-    display: block; width: 100%; padding: 14px; margin-bottom: 10px;
-    background: rgba(255,255,255,0.6); border: 1px solid #dcd0b9;
-    border-radius: 10px; font-family: "Georgia", serif; cursor: pointer; transition: 0.2s;
+    display: block; 
+    width: 100%; 
+    padding: 16px 20px; 
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--zen-mist);
+    border-radius: 12px; 
+    font-family: "Crimson Text", "Georgia", serif;
+    font-size: 1rem;
+    color: var(--zen-stone);
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    text-align: left;
+    box-shadow: 0 2px 8px var(--shadow-soft);
 }
-.option-btn:hover { background: #fff; }
-
-/* Ad Area (1/7th) */
-.ad-placeholder-section {
-    flex: 1; background-color: var(--bg-color); display: flex;
-    justify-content: center; align-items: center; text-align: center;
-    padding: 0 25px; border-top: 1px solid rgba(0,0,0,0.05);
+.option-btn:hover { 
+    background: #fff;
+    border-color: var(--zen-bronze);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-soft);
 }
-.ad-text { font-size: 0.75rem; color: #aaa; font-style: italic; }
+.option-btn:active {
+    transform: translateY(0);
+}
 
-/* Modal & UI */
+.option-btn-placeholder {
+    cursor: default;
+    opacity: 0.6;
+    color: transparent;
+}
+.option-btn-placeholder:hover {
+    transform: none;
+    background: rgba(255,255,255,0.7);
+    border-color: var(--zen-mist);
+}
+
+/* Werbebanner + Footer */
+.ad-banner {
+    margin: 0 20px 12px;
+    padding: 14px 16px;
+    border: 1px dashed var(--zen-bronze);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--zen-bronze);
+    opacity: 0.75;
+    background: rgba(255,255,255,0.45);
+    text-transform: lowercase;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 20px 18px;
+    border-top: 1px solid var(--zen-mist);
+    background: linear-gradient(0deg, var(--zen-cream) 0%, transparent 100%);
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    color: var(--zen-bronze);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Modal & UI - Zen Style */
 .hidden { display: none !important; }
-.modal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 100; }
-.modal-content { background: #fff; padding: 25px; border-radius: 20px; width: 85%; }
-.form-group { margin-bottom: 15px; }
-.form-group label { display: block; font-size: 0.8rem; color: #666; margin-bottom: 5px; }
-input, select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
-.profile-note { font-style: italic; color: var(--brown-accent); font-size: 0.9rem; }
-.close-btn { width: 100%; padding: 12px; background: var(--brown-accent); color: #fff; border: none; border-radius: 10px; cursor: pointer; }
-
-.spinner { width: 35px; height: 35px; border: 3px solid #ddd; border-top: 3px solid var(--brown-accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 50% auto 15px; }
-@keyframes spin { 100% { transform: rotate(360deg); } }
-.italic-msg { text-align: center; color: var(--brown-accent); font-style: italic; }
-.test-btn { display: block; margin: 15px auto; background: none; border: 1px solid #ccc; color: #999; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; }
-
-/* --- RESPONSIVE FIX: Entfernt das Mockup auf Handys --- */
-@media (max-width: 450px) {
-    body {
-        background-color: var(--bg-color); /* Hintergrundfarbe an App anpassen */
-        align-items: flex-start; /* Oben ausrichten statt mittig */
-    }
-
-    .phone-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    .phone-frame {
-        width: 100vw;   /* Volle Breite des Handys */
-        height: 100vh;  /* Volle Höhe des Handys */
-        border: none;   /* Rahmen entfernen */
-        border-radius: 0; /* Abrundung entfernen */
-        box-shadow: none;
-    }
-
-    .notch {
-        display: none; /* Die schwarze Notch ausblenden */
-    }
-
-    .toolbar {
-        padding-top: 50px; /* Platz für die System-Statusleiste (Uhrzeit/Akku) lassen */
-    }
+.modal { 
+    position: fixed;
+    inset: 0;
+    background: rgba(61, 61, 61, 0.85);
+    backdrop-filter: blur(4px);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 100;
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.modal-content { 
+    background: var(--parchment);
+    padding: 30px; 
+    border-radius: 20px; 
+    width: 85%;
+    max-width: 320px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    border: 1px solid var(--zen-gold);
 }
 
+.legal-modal-content {
+    width: 92%;
+    max-width: 560px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.legal-text {
+    color: var(--zen-stone);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.legal-text p {
+    margin-bottom: 12px;
+}
+
+.legal-link {
+    color: var(--zen-bronze);
+}
+.modal-content h2 {
+    font-family: "Crimson Text", serif;
+    color: var(--zen-bronze);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.form-group { margin-bottom: 18px; }
+.form-group label { 
+    display: block; 
+    font-size: 0.85rem; 
+    color: var(--zen-bronze); 
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+input, select { 
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid var(--zen-mist);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+    font-family: "Crimson Text", serif;
+    font-size: 1rem;
+    color: var(--zen-stone);
+    transition: all 0.3s ease;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--zen-bronze);
+    background: #fff;
+}
+.profile-note { 
+    font-style: italic; 
+    color: var(--zen-bronze); 
+    font-size: 0.9rem;
+    padding: 10px;
+    background: rgba(184, 149, 106, 0.1);
+    border-radius: 8px;
+}
+.close-btn { 
+    width: 100%; 
+    padding: 14px; 
+    background: var(--zen-bronze);
+    color: var(--zen-cream);
+    border: none; 
+    border-radius: 12px; 
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px var(--shadow-soft);
+}
+.close-btn:hover {
+    background: var(--zen-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px var(--shadow-soft);
+}
+.close-btn:active {
+    transform: translateY(0);
+}
+
+/* Loading & Wandering */
+#wandering-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 40px;
+}
+.spinner { 
+    width: 40px; 
+    height: 40px; 
+    border: 3px solid var(--zen-mist);
+    border-top: 3px solid var(--zen-bronze);
+    border-radius: 50%; 
+    animation: spin 1.5s ease-in-out infinite; 
+    margin-bottom: 20px;
+}
+@keyframes spin { 
+    100% { transform: rotate(360deg); } 
+}
+.italic-msg { 
+    text-align: center; 
+    color: var(--zen-bronze); 
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+.test-btn { 
+    display: block; 
+    margin: 20px auto 0; 
+    background: none; 
+    border: 1px solid var(--zen-mist);
+    color: var(--zen-bronze);
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    font-size: 0.75rem; 
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.test-btn:hover {
+    opacity: 1;
+    border-color: var(--zen-bronze);
+}

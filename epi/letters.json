@@ -1,20 +1,1502 @@
 [
   {
-    "content": "Mein lieber [NAME],\n\nIch sah heute Menschen in Germania, die in langen Schlangen vor einem Metallkasten standen.\n\nSie warteten geduldig, nur um bunte Papierstreifen gegen ihr tägliches Brot zu tauschen.\n\nSie wirkten gehetzt, als liefe ihnen die Zeit davon, obwohl sie doch nur warteten.",
-    "question": "Was glaubst du, ist der wahre Wert ihrer Mühe?",
-    "options": ["Das Brot allein", "Das Ansehen vor anderen", "Die gewonnene Zeit"],
-    "traits": ["Bescheidenheit", "Eitelkeit", "Zeitgeist"]
+    "title": "Das Orakel der Suchmaschine",
+    "content": "gestern sah ich Menschen, die kleine Tafeln befragen – „Google\" nennen sie es. Einer fragte: „Ist Kaffee gesund?\" Die Tafel gab zehntausend Antworten. Der Mann las die erste und war zufrieden.\n\nIn Athen gingen wir zum Orakel von Delphi – eine beschwerliche Reise! Hier habt ihr Orakeln in der Tasche, doch niemand scheint mehr zu zweifeln. Die erste Antwort wird zur Wahrheit.\n\nWenn Wissen so leicht zu haben ist – warum fühle ich mich umgeben von Gewissheit, aber so selten von Weisheit?",
+    "question": "Was macht deiner Meinung nach den Unterschied zwischen Information und Weisheit?",
+    "options": [
+      "Die Zeit, die man mit einer Frage verbringt",
+      "Die Bereitschaft, eine Antwort wieder zu hinterfragen",
+      "Die Quelle, aus der eine Antwort stammt"
+    ],
+    "traits": [
+      "Geduld",
+      "Reflexion",
+      "Quellenprüfung"
+    ]
   },
   {
-    "content": "Heils dir, [NAME].\n\nEin junger Mann erklärte mir das Konzept der 'Karriere'. Er opfert seine Jugend, um im Alter im Überfluss zu ruhen.\n\nDoch wer garantiert ihm, dass das Alter ihn überhaupt erreicht?",
-    "question": "Wann, mein Freund, beginnt das gute Leben?",
-    "options": ["In diesem Augenblick", "Wenn das Ziel erreicht ist", "Es ist ein ewiger Kampf"],
-    "traits": ["Gegenwart", "Planung", "Stoik"]
+    "title": "Die Theaterbühne der Gesichter",
+    "content": "ich entdeckte etwas Merkwürdiges: Die Menschen hier malen sich Gesichter auf ihre Tafeln – „Instagram\" nennen sie es. Sie zeigen nicht ihr Leben, sondern eine Aufführung ihres Lebens.\n\nEine junge Frau erzählte mir, sie habe heute stundenlang ein Bild ihres Frühstücks vorbereitet. Das Frühstück selbst wurde kalt.\n\nWir Athener spielten im Theater Rollen – aber danach nahmen wir die Masken ab. Hier scheinen die Masken Teil des Gesichts geworden zu sein.",
+    "question": "Wann glaubst du, bist du am meisten „du selbst\"?",
+    "options": [
+      "Wenn dich niemand sieht",
+      "Wenn dich alle sehen",
+      "Wenn du vergisst, ob dich jemand sieht"
+    ],
+    "traits": [
+      "Introversion",
+      "Performanz",
+      "Authentizität"
+    ]
   },
   {
-    "content": "[NAME],\n\nüberall sehe ich Orte, an denen Menschen ihre Körper stählen, als bereiteten sie sich auf eine Schlacht vor, die niemals kommt.\n\nDoch ihre Seelen lassen sie dabei oft im Unkraut verwildern.",
-    "question": "Was bedarf mehr der täglichen Übung?",
-    "options": ["Der kräftige Leib", "Die klare Seele", "Beides im Einklang"],
-    "traits": ["Disziplin", "Geistesschärfe", "Gleichgewicht"]
+    "title": "Die Geschwindigkeit der Gedanken",
+    "content": "eure Kutschen fahren ohne Pferde – mit unglaublicher Geschwindigkeit! Doch ich bemerkte: Je schneller die Menschen reisen, desto weniger scheinen sie anzukommen.\n\nEin Mann prahlte, er sei in drei Stunden von Berlin nach München geflogen. Ich fragte: „Und was hast du dort gefunden, was du hier nicht hattest?\" Er schwieg.\n\nIn Athen brauchten wir Tage für eine Reise. Aber wir kamen an. Hier seid ihr ständig unterwegs – aber wohin eigentlich?",
+    "question": "Was meinst du: Wann bewegt man sich wirklich vorwärts?",
+    "options": [
+      "Wenn sich die Landschaft um einen herum ändert",
+      "Wenn sich etwas in einem selbst verändert",
+      "Wenn man endlich anhalten kann"
+    ],
+    "traits": [
+      "Äußerer Wandel",
+      "Innerer Wandel",
+      "Besinnung"
+    ]
+  },
+  {
+    "title": "Die Freiheit der Wahl",
+    "content": "im Markt sah ich ein Regal mit hundert Sorten Joghurt. Eine Frau stand dreißig Minuten davor, unglücklich. „So viel Auswahl\", seufzte sie.\n\nIn Athen hatten wir Ziegenmilch oder keine Ziegenmilch. Die Entscheidung dauerte einen Herzschlag.\n\nEure Philosophen sprechen von Freiheit durch Wahlmöglichkeiten. Doch diese Frau wirkte wie eine Gefangene ihrer Optionen.",
+    "question": "Wann macht Wahlfreiheit deiner Meinung nach wirklich frei?",
+    "options": [
+      "Wenn man viele Möglichkeiten hat",
+      "Wenn man weiß, was man wirklich will",
+      "Wenn man auch Nein sagen kann zu allem"
+    ],
+    "traits": [
+      "Optionssuche",
+      "Klarheit",
+      "Verzicht"
+    ]
+  },
+  {
+    "title": "Die Stimmen in der Demokratie",
+    "content": "ihr nennt euch „Demokratie\" – Herrschaft des Volkes! Das erfreut mein altes Herz. Doch dann sah ich: Die Menschen dürfen alle vier Jahre ein Kreuz machen, und dazwischen scheinen sie zu verstummen.\n\nEiner sagte mir: „Was soll ich tun? Ich bin nur ein Einzelner.\" Als wären Einzelne keine Bausteine des Volkes!\n\nIn Athen stritten wir täglich auf der Agora. Es war laut, anstrengend – und lebendig. Eure Demokratie scheint mir manchmal sehr still.",
+    "question": "Was denkst du: Wann beginnt Demokratie wirklich?",
+    "options": [
+      "Am Wahltag alle vier Jahre",
+      "In jedem Gespräch über das Gemeinwohl",
+      "Wenn man für seine Meinung einsteht"
+    ],
+    "traits": [
+      "Formalismus",
+      "Dialog",
+      "Zivilcourage"
+    ]
+  },
+  {
+    "title": "Das Maß des Erfolgs",
+    "content": "die Menschen hier fragen einander ständig: „Was arbeitest du?\" Nie: „Was denkst du?\" oder „Wovon träumst du?\"\n\nEin junger Mann erzählte mir stolz von seinem „Karriere-Ziel\": In zehn Jahren will er ein großes Haus besitzen. Ich fragte: „Und wer willst du in zehn Jahren sein?\" Er verstand die Frage nicht.\n\nIhr messt Erfolg in Dingen, die man anhäufen kann. Aber wer misst, was man geworden ist?",
+    "question": "Woran würdest du am Ende deines Lebens deinen Erfolg messen?",
+    "options": [
+      "An dem, was du besessen hast",
+      "An dem, was du erlebt hast",
+      "An dem, was du geworden bist"
+    ],
+    "traits": [
+      "Materialismus",
+      "Erlebnisorientierung",
+      "Selbstverwirklichung"
+    ]
+  },
+  {
+    "title": "Die Algorithmen des Schicksals",
+    "content": "man erklärte mir, dass unsichtbare „Algorithmen\" entscheiden, was die Menschen sehen, lesen, sogar wen sie lieben sollen. Diese Algorithmen kennen die Menschen besser als sie sich selbst.\n\nWir glaubten an Schicksal, an Götter, die unsere Wege lenken. Ihr habt die Götter abgeschafft – und euch neue erschaffen, aus Zahlen gemacht.\n\nAber hier die Frage: Wenn etwas dich besser kennt als du selbst – bist du dann noch frei, dich selbst kennenzulernen?",
+    "question": "Was denkst du: Wer sollte entscheiden, wer du bist?",
+    "options": [
+      "Die Daten deines vergangenen Verhaltens",
+      "Deine bewussten Entscheidungen im Jetzt",
+      "Die Möglichkeit, dich immer wieder neu zu überraschen"
+    ],
+    "traits": [
+      "Determinismus",
+      "Freier Wille",
+      "Selbstüberraschung"
+    ]
+  },
+  {
+    "title": "Die Nachrichten vom Ende der Welt",
+    "content": "jeden Morgen lesen Menschen hier „Nachrichten\" – Berichte über Kriege, Katastrophen, Krisen. Überall auf der Welt, gleichzeitig. Ein Mann sagte: „Die Welt geht unter\", dabei saß er sicher in einem warmen Café.\n\nIn Athen erfuhren wir von Unglücken – wenn ein Reisender davon berichtete, Wochen später. Wir konnten nichts tun, also taten wir es auch nicht.\n\nIhr wisst alles, sofort. Aber könnt ihr auch alles tragen? Oder lähmt euch die Schwere der ganzen Welt?",
+    "question": "Was meinst du: Wie viel Leid der Welt kann ein Mensch tragen, ohne selbst zu zerbrechen?",
+    "options": [
+      "Alles – es ist unsere Pflicht",
+      "Nur das, bei dem wir auch helfen können",
+      "So viel, dass wir noch handlungsfähig bleiben"
+    ],
+    "traits": [
+      "Verantwortung für Alles",
+      "Pragmatismus",
+      "Selbstfürsorge"
+    ]
+  },
+  {
+    "title": "Die Liebe auf der Marktplatz",
+    "content": "ich sah Menschen, die auf „Dating-Apps\" nach Liebe suchen – wie auf einem Markt! Sie wischen über Gesichter: links (nein), rechts (vielleicht). In Sekunden entschieden.\n\nEin Mädchen zeigte mir hundert Gesichter, die sie „weggewischt\" hatte. „Niemand passt\", klagte sie. Ich fragte: „Wie lange hast du ihnen zugehört?\" – „Gehört?\"\n\nEros, der Gott der Liebe, muss über euch lachen. Oder weinen. Vielleicht beides.",
+    "question": "Wie findet man deiner Meinung nach wahre Liebe?",
+    "options": [
+      "Indem man viele Menschen kennenlernt und vergleicht",
+      "Indem man einem Menschen wirklich zuhört",
+      "Indem man zuerst lernt, sich selbst zu lieben"
+    ],
+    "traits": [
+      "Vergleichen",
+      "Zuhören",
+      "Selbstliebe"
+    ]
+  },
+  {
+    "title": "Die Zeit, die man spart",
+    "content": "überall höre ich: „Zeitersparnis!\" Schnellerer Kaffee, schnelleres Essen, Nachrichten in Kurzform. Alle sparen Zeit.\n\nAber ich sehe niemanden, der sagt: „Schau, all die Zeit, die ich gespart habe – damit sitze ich nun still und denke nach.\" Wohin verschwindet die gesparte Zeit?\n\nMir scheint: Je mehr Zeit ihr spart, desto weniger habt ihr.",
+    "question": "Wofür würdest du gerne mehr Zeit haben?",
+    "options": [
+      "Für produktive Dinge, die vorankommen bringen",
+      "Für Menschen, die dir wichtig sind",
+      "Für absolut nichts – einfach nur sein"
+    ],
+    "traits": [
+      "Produktivität",
+      "Beziehungen",
+      "Müßiggang"
+    ]
+  },
+  {
+    "title": "Die Experten des Lebens",
+    "content": "für alles gibt es hier „Experten\": Ernährungsexperten, Beziehungsexperten, Glücksexperten. Die Menschen fragen sie, wie man leben soll.\n\nIn Athen hatten wir auch Weise. Aber wir befragten sie, um dann selbst zu denken – nicht um ihnen blind zu folgen.\n\nEin Mann sagte mir: „Mein Coach sagt, ich soll mehr an mich denken.\" Ich fragte: „Und was sagst du?\" Er hatte nie darüber nachgedacht.",
+    "question": "Wann sollte man deiner Meinung nach dem Rat anderer folgen?",
+    "options": [
+      "Wenn sie mehr Wissen haben als man selbst",
+      "Wenn ihr Rat zur eigenen inneren Stimme passt",
+      "Nur als Inspiration, nie als Anweisung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kommentare unter dem Leben",
+    "content": "unter jeder Meinung, jedem Bild, jedem Gedanken stehen hier „Kommentare\" – tausende fremde Stimmen. Manche loben, viele beschimpfen, die meisten haben nicht nachgedacht.\n\nEine Frau zeigte mir ein Foto ihres Gartens. 500 Menschen kommentierten. Drei waren im Garten gewesen. Die anderen „wussten\" trotzdem alles besser.",
+    "question": "Was glaubst du: Wessen Meinung über dein Leben zählt wirklich?",
+    "options": [
+      "Die Meinung der Mehrheit",
+      "Die Meinung derer, die dich kennen",
+      "Deine eigene, nach ehrlicher Reflexion"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Angst vor dem Verpassen",
+    "content": "„FOMO\" nennen es die jungen Leute – Fear Of Missing Out. Die Angst, etwas zu verpassen. Ständig prüfen sie ihre Tafeln: Was machen die anderen? Wo sind sie? Bin ich am richtigen Ort?\n\nEin junger Mann saß bei einem Konzert – und filmte es für seine Freunde, statt es selbst zu erleben. Er war dort, und doch nicht dort.",
+    "question": "Was würdest du sagen: Was verpasst man wirklich im Leben?",
+    "options": [
+      "Die Events und Erlebnisse, bei denen man nicht dabei war",
+      "Den gegenwärtigen Moment, weil man woanders hinschaut",
+      "Nichts – weil jeder Weg das Richtige verpassen und finden lässt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Produktivität des Daseins",
+    "content": "„Produktiv sein\" – das scheint eure höchste Tugend. Jede Minute soll etwas hervorbringen. Selbst beim Spaziergang hören die Menschen „Podcasts\", um „die Zeit zu nutzen\".\n\nIch saß gestern eine Stunde auf einer Bank. Tat nichts. Ein Mann fragte besorgt: „Geht es Ihnen gut?\" – Als wäre Nichtstun eine Krankheit!",
+    "question": "Wann denkst du, ist Zeit wirklich gut genutzt?",
+    "options": [
+      "Wenn etwas Messbares dabei herauskommt",
+      "Wenn du dich danach lebendiger fühlst",
+      "Wenn du vergessen hast, sie zu messen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Wahrheit in Zeiten der Lüge",
+    "content": "„Fake News\" nennt ihr es. Lügen, die wie Wahrheiten aussehen. Jeder kann heute alles behaupten, und tausende werden es glauben.\n\nDoch das Merkwürdige: Ihr habt mehr Werkzeuge zur Überprüfung als je ein Volk vor euch – und dennoch scheint Wahrheit schwieriger zu finden als in meiner Zeit.\n\nVielleicht liegt es nicht am Mangel an Wahrheit, sondern am Mangel an Menschen, die wirklich fragen: „Ist das wahr?\" statt „Will ich, dass es wahr ist?\"",
+    "question": "Wie findest du heraus, ob etwas wahr ist?",
+    "options": [
+      "Ich prüfe vertrauenswürdige Quellen",
+      "Ich frage, wem diese „Wahrheit\" nützt",
+      "Ich bemerke, was ich fühlen möchte, und werde dann skeptisch"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Das ständige Rennen",
+    "content": "alle hier scheinen zu rennen. Rennen zur Arbeit, rennen nach Hause, rennen zum Sport, um vom Rennen zu entspannen. „Keine Zeit\", höre ich hundertmal am Tag.\n\nDoch wohin rennt ihr? Ich fragte einen Mann im Anzug. Er blieb stehen, dachte nach und sagte: „Gute Frage.\" Dann rannte er weiter.",
+    "question": "Was denkst du: Wovor laufen die Menschen davon?",
+    "options": [
+      "Vor Ineffizienz und verlorener Zeit",
+      "Vor der Stille und ihren eigenen Gedanken",
+      "Vor nichts – es ist einfach Gewohnheit geworden"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Nachhaltige Inkonsequenz",
+    "content": "ein Mann erklärte mir stolz seinen „nachhaltigen Lebensstil\": Er trennt Müll, kauft Bio-Lebensmittel, fährt Fahrrad. Dann flog er für ein Wochenende nach Mallorca, „weil er es verdient hat\".\n\nIhr wisst so viel über die Zerstörung eurer Erde – und handelt so wenig danach. Warum? Ist Wissen nicht Macht zur Veränderung?\n\nOder ist das Problem, dass Wissen allein nie genügt hat?",
+    "question": "Was braucht es deiner Meinung nach, um wirklich nach seinen Werten zu leben?",
+    "options": [
+      "Mehr Wissen über die Konsequenzen",
+      "Soziale Strukturen, die es leichter machen",
+      "Ehrlichkeit mit sich selbst über eigene Widersprüche"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Toleranz-Grenze",
+    "content": "„Toleranz\" predigen hier alle. „Wir müssen tolerant sein.\" Wunderbar! Doch dann fragte ich: „Sollen wir auch die Intoleranten tolerieren?\" – Schweigen.\n\nEin zweites Paradox: Alle fordern Meinungsfreiheit. Aber wenn jemand eine Meinung äußert, die ihnen missfällt, fordern sie Konsequenzen.\n\nFreiheit und Toleranz scheinen einfache Worte – bis man wirklich über sie nachdenkt.",
+    "question": "Wo würdest du die Grenze der Toleranz ziehen?",
+    "options": [
+      "Bei Meinungen, die andere Meinungen vernichten wollen",
+      "Bei Handlungen, die anderen schaden – nicht bei Worten",
+      "Es gibt keine klare Grenze, jeder Fall ist individuell"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Selbstoptimierung",
+    "content": "„Selbstoptimierung\" – welch seltsames Wort! Die Menschen hier behandeln sich wie Maschinen, die man verbessern muss. Besser schlafen, besser essen, besser denken, besser lieben.\n\nEin junger Mann zeigte mir seine Apps: eine für Meditation, eine für Sport, eine für gesunde Ernährung, eine für Schlaf. „Ich arbeite an mir\", sagte er erschöpft.\n\nIch fragte: „Wann bist du fertig optimiert?\" – Er verstand die Frage nicht.",
+    "question": "Was denkst du: Wann ist ein Mensch gut genug?",
+    "options": [
+      "Nie – Stillstand ist Rückschritt",
+      "Wenn er mit sich im Frieden ist",
+      "Wenn er aufhört, sich mit anderen zu vergleichen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Arbeit des Lebens",
+    "content": "„Work-Life-Balance\" – ihr trennt Arbeit und Leben, als wären es Feinde. Die Hälfte eures Lebens arbeitet ihr, um die andere Hälfte zu genießen.\n\nIn Athen fragten wir: „Was ist ein gutes Leben?\" – Nicht: „Wie komme ich schnell zum Wochenende?\"\n\nIst Arbeit der Preis fürs Leben? Oder kann Arbeit selbst Leben sein?",
+    "question": "Was macht deiner Meinung nach Arbeit lebenswert?",
+    "options": [
+      "Wenn sie gut bezahlt ist und Sicherheit gibt",
+      "Wenn sie einen Sinn hat, der über Geld hinausgeht",
+      "Wenn man dabei vergisst, dass es Arbeit ist"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Likes der Anerkennung",
+    "content": "ich sah ein Mädchen, das ein Foto hundertmal neu machte – für die „Likes\" fremder Menschen. „Je mehr Likes, desto wertvoller bin ich\", erklärte sie.\n\nIn Athen strebten wir nach Arete – nach Vortrefflichkeit. Aber die wurde von innen gemessen, nicht in der Zahl applaudierender Fremder.\n\nHabt ihr euer Maß für Wert wirklich Algorithmen überlassen?",
+    "question": "Woran misst du deinen Wert als Mensch?",
+    "options": [
+      "An der Anerkennung anderer",
+      "An deinen eigenen Standards und Zielen",
+      "Gar nicht – Wert ist keine Zahl"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Verbindung der Getrennten",
+    "content": "„Soziale Netzwerke\" – ihr seid vernetzt mit tausenden Menschen weltweit! Und doch höre ich ständig: „Ich fühle mich einsam.\"\n\nEine Frau hat 800 „Freunde\" online. Ich fragte: „Wen würdest du um 3 Uhr nachts anrufen?\" – Sie nannte zwei Namen.\n\n798 Verbindungen, 2 Freunde. Ist das Fortschritt?",
+    "question": "Was macht deiner Meinung nach echte Verbindung aus?",
+    "options": [
+      "Die Anzahl der Menschen, die man kennt",
+      "Die Tiefe, in der man sich kennt",
+      "Das Gefühl, gesehen zu werden, wie man ist"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Zukunft, die wir fürchten",
+    "content": "alle hier sprechen von der Zukunft mit Angst: Klimakrise, Arbeitsplatzverlust durch Maschinen, Kriege, Krankheiten. „Die Zukunft sieht düster aus\", höre ich oft.\n\nAber ist die Zukunft jemals hell oder düster? Oder sind es nur unsere Gedanken über sie?\n\nIn Athen hatten wir Orakel für die Zukunft. Ihr habt Prognosen, Statistiken, Experten – und seid nicht weniger ängstlich.",
+    "question": "Was hilft deiner Meinung nach im Umgang mit einer ungewissen Zukunft?",
+    "options": [
+      "Gute Planung und Vorbereitung",
+      "Vertrauen in die eigene Anpassungsfähigkeit",
+      "Sich auf das Jetzt konzentrieren, das man beeinflussen kann"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Entschuldigung als Phrase",
+    "content": "„Sorry\" sagen hier alle, ständig. Jemand stößt dich an: „Sorry!\" Du störst jemanden: „Sorry!\" Die Bahn ist zu spät: „Sorry for the inconvenience.\"\n\nDas Wort ist überall – und bedeutet nirgends mehr etwas. Es ist ein Geräusch geworden, keine Reue.\n\nIn Athen bedeutete eine Entschuldigung noch etwas. Sie war selten, schwer, echt.",
+    "question": "Wann ist eine Entschuldigung deiner Meinung nach wirklich eine?",
+    "options": [
+      "Wenn man das Wort ausspricht",
+      "Wenn man versteht, was man falsch gemacht hat",
+      "Wenn sich danach etwas im Verhalten ändert"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kinder am Bildschirm",
+    "content": "ich sah Kinder auf dem Spielplatz – jedes starrte auf eine Tafel in seiner Hand. Sie saßen nebeneinander und sprachen nicht.\n\n„Sie spielen zusammen\", sagte die Mutter. Aber sie waren in verschiedenen Welten, nur ihre Körper teilten den Ort.\n\nHaben eure Kinder gewonnen oder verloren durch diese Zauber-Tafeln?",
+    "question": "Was denkst du: Was verlieren Kinder, die mit Smartphones aufwachsen?",
+    "options": [
+      "Nichts – sie lernen wichtige Zukunftsfähigkeiten",
+      "Die Fähigkeit, sich zu langweilen und kreativ zu sein",
+      "Die Übung in echten, ungefilterten Beziehungen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Privatsphäre im Glashaus",
+    "content": "die Menschen hier sorgen sich um „Privatsphäre\" – und posten gleichzeitig jeden Gedanken, jedes Essen, jeden Urlaubsort online.\n\n„Die Regierung darf mich nicht überwachen!\" ruft einer – und erzählt Facebook, wo er ist, was er denkt, wen er liebt.\n\nIhr habt Angst, beobachtet zu werden – und streamt gleichzeitig euer Leben. Welch seltsames Paradox!",
+    "question": "Was bedeutet Privatsphäre in einer vernetzten Welt deiner Meinung nach?",
+    "options": [
+      "Alles privat halten, was nicht öffentlich sein muss",
+      "Selbst entscheiden, was man teilt – nicht Konzerne",
+      "Privatsphäre ist eine Illusion, die wir aufgeben müssen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Das Multitasking des Geistes",
+    "content": "ein Mann prahlte: „Ich kann Multitasking!\" Er telefonierte, tippte E-Mails, hörte Musik – gleichzeitig. Ich fragte ihn später, worüber das Telefonat ging. Er wusste es nicht mehr.\n\nIhr tut viele Dinge gleichzeitig – aber keines ganz. Ist das Fortschritt?\n\nEin Gedanke: Vielleicht ist der Geist wie Sonnenlicht. Gestreut erhellt er wenig. Gebündelt entfacht er Feuer.",
+    "question": "Was denkst du: Wie nutzt man seinen Geist am besten?",
+    "options": [
+      "Indem man möglichst viele Dinge gleichzeitig erledigt",
+      "Indem man einer Sache die volle Aufmerksamkeit gibt",
+      "Indem man zwischen beidem flexibel wechseln kann"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Angst vor dem Scheitern",
+    "content": "„Scheiter-Kultur\" höre ich oft – aber was ich sehe, ist das Gegenteil. Die Menschen haben solche Angst zu scheitern, dass sie gar nicht erst beginnen.\n\nEin Student sagte: „Ich schreibe nur Bewerbungen für Jobs, die ich sicher bekomme.\" – Sicher zu scheitern ist ihm lieber als unsicher zu versuchen.\n\nIn Athen tranken wir den Schierlingsbecher für unsere Überzeugungen. Ihr wagt nicht mal eine peinliche E-Mail.",
+    "question": "Was ist deiner Meinung nach das größte Scheitern?",
+    "options": [
+      "Etwas zu versuchen und zu versagen",
+      "Aus Angst nichts zu versuchen",
+      "Zu vergessen, dass Scheitern zum Leben gehört"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Gesundheit als Religion",
+    "content": "Gesundheit scheint eure neue Religion. Schrittzähler sind eure Gebetsschnüre, Kalorientabellen eure heiligen Schriften.\n\n„Ich darf das nicht essen\", sagt eine junge Frau über Kuchen – als wäre Genuss eine Sünde. Sie lebt, um gesund zu sein. Aber lebt sie?\n\nWas nützt ein langer gesunder Körper, wenn die Seele vor lauter Verzicht verhungert?",
+    "question": "Was bedeutet für dich ein gesundes Leben?",
+    "options": [
+      "Ein Körper, der lange funktioniert",
+      "Eine Balance zwischen Körper, Geist und Freude",
+      "Ein Leben, das man nicht bereut"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Gleichheit der Ungleichen",
+    "content": "„Alle Menschen sind gleich\", sagt euer Grundgesetz. Wunderschön! Doch dann: „Jeder ist einzigartig\", sagt ihr im nächsten Satz.\n\nWie können alle gleich UND einzigartig sein? Ihr wollt Gleichheit – aber auch, dass eure Besonderheit gesehen wird.\n\nDieses Paradox zerreißt eure Gesellschaft. Die einen rufen: „Behandelt alle gleich!\" Die anderen: „Seht unsere Unterschiede!\"",
+    "question": "Was denkst du: Wie löst man diesen Widerspruch?",
+    "options": [
+      "Gleiche Rechte, aber Anerkennung der Unterschiede",
+      "Völlige Gleichbehandlung ohne Ausnahmen",
+      "Es ist kein Widerspruch – beides ist gleichzeitig möglich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Bildung der Abschlüsse",
+    "content": "„Bildung\" bedeutet hier: Zertifikate sammeln. Bachelor, Master, Doktor – wie Trophäen. Aber ich treffe „Gebildete\", die nichts mehr fragen.\n\nEin Mann mit drei Titeln erklärte mir die Welt. Ich fragte: „Woher weißt du das?\" – „Ich habe es studiert.\" – „Aber hast du darüber nachgedacht?\" – Schweigen.\n\nIst gebildet, wer viel weiß? Oder wer weiß, dass er wenig weiß?",
+    "question": "Was bedeutet Bildung deiner Meinung nach?",
+    "options": [
+      "Viel Wissen in einem Fachgebiet",
+      "Die Fähigkeit, kritisch zu denken",
+      "Neugierig zu bleiben, ein Leben lang"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Langeweile als Chance",
+    "content": "Langeweile scheint hier das größte Übel. Jede Sekunde muss gefüllt sein: Musik, Videos, Spiele, Nachrichten. Stille ist der Feind.\n\nDoch ich erinnere mich: Meine besten Gedanken kamen in langweiligen Momenten. Wenn der Geist nichts zu tun hat, beginnt er zu denken.\n\nVielleicht braucht eure beschäftigte Gesellschaft gerade das: Langeweile.",
+    "question": "Was denkst du: Was passiert, wenn man sich langweilt?",
+    "options": [
+      "Zeitverschwendung",
+      "Der Geist wird kreativ",
+      "Man lernt, mit sich selbst auszukommen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Empörung der Gerechten",
+    "content": "täglich sehe ich „Shitstorms\" – digitale Wutausbrüche gegen Menschen, die etwas Falsches sagten. Tausende verurteilen, innerhalb von Stunden.\n\n„Er hat es verdient\", sagen sie. Vielleicht. Aber die Wut fühlt sich zu gut an, zu gerecht. Man genießt sie.\n\nIn Athen hatten wir auch Empörung. Aber wir kannten die Verurteilten persönlich. Hier verurteilt ihr Fremde – das macht es leichter. Und gefährlicher.",
+    "question": "Wann ist Empörung deiner Meinung nach gerechtfertigt?",
+    "options": [
+      "Immer, wenn Unrecht geschieht",
+      "Nur wenn man auch bereit ist, konstruktiv zu helfen",
+      "Selten – Empörung vernebelt meist das Denken"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Authentizität als Marke",
+    "content": "„Sei authentisch!\" rufen alle. „Sei du selbst!\" Wunderbar. Doch dann: „Aber optimiere dein persönliches Branding!\"\n\nEine „Influencerin\" erklärte mir, sie zeige „authentisch ihr Leben\" – nach drei Stunden Make-up und einem Team von Beratern.\n\nAuthentizität ist zur Verkaufsstrategie geworden. Kann etwas echt sein, das verkauft wird?",
+    "question": "Was bedeutet für dich Authentizität?",
+    "options": [
+      "Zu zeigen, wer man wirklich ist",
+      "Zu SEIN, wer man wirklich ist – egal wer zuschaut",
+      "Ein Marketingbegriff ohne echte Bedeutung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Sicherheit vor dem Leben",
+    "content": "„Sicherheit\" ist euer höchstes Gut. Versicherungen für alles: Gesundheit, Auto, Leben, Zähne, Rechtsschutz. Ihr versichert euch gegen jedes Risiko.\n\nDoch ein risikoloses Leben – ist das überhaupt Leben? Oder nur Existenz auf Nummer sicher?\n\nDie größten Momente meines Lebens waren die unsichersten. Der Prozess. Die Gespräche. Der Schierlingsbecher.",
+    "question": "Was denkst du: Wie viel Sicherheit braucht ein gutes Leben?",
+    "options": [
+      "So viel wie möglich – Sicherheit ist Freiheit",
+      "Ein Fundament an Sicherheit, darauf dann Risiken",
+      "Zu viel Sicherheit macht das Leben langweilig"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Das Mitleid der Distanz",
+    "content": "wenn in eurem Land ein Kind stirbt, steht es wochenlang in den Nachrichten. Wenn in Afrika tausend Kinder sterben – eine Meldung, drei Sätze.\n\n„Das ist so weit weg\", sagen die Menschen. Aber ist Leid weniger Leid, weil es weit weg ist?\n\nEure Herzen haben Grenzen, wie eure Länder. Ist das menschlich verständlich? Oder menschlich beschämend?",
+    "question": "Wie gehst du mit Leid um, das geografisch weit weg ist?",
+    "options": [
+      "Es berührt mich weniger – das ist normal",
+      "Ich versuche, gleich mitfühlend zu sein",
+      "Ich konzentriere mich auf Leid, das ich beeinflussen kann"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Cancel Culture",
+    "content": "„Gecancelt\" werden – sozial ausgelöscht für einen Fehler, einen falschen Satz. Keine zweite Chance, kein Verzeihen.\n\nIst das Gerechtigkeit? Oder digitale Lynchjustiz?\n\nIch wurde zum Tod verurteilt für meine Ideen. Aber selbst meine Richter gaben mir 30 Tage, meine Position zu überdenken. Ihr gebt 30 Sekunden.",
+    "question": "Was sollte deiner Meinung nach mit Menschen geschehen, die öffentlich Fehler machen?",
+    "options": [
+      "Sie müssen die Konsequenzen tragen",
+      "Sie verdienen eine Chance zur Erklärung und Besserung",
+      "Es kommt auf die Schwere des Fehlers an"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Perfektion der Körper",
+    "content": "überall sehe ich perfekte Körper in euren Medien. Perfekte Haut, perfekte Muskeln, perfekte Proportionen. „Das ist nicht real\", wisst ihr – und jagt trotzdem danach.\n\nEin Mädchen verhungert sich für einen Körper, den selbst Models nur mit digitaler Hilfe haben. Wahnsinn!\n\nWarum habt ihr vergessen, dass Schönheit subjektiv ist?",
+    "question": "Was macht einen Körper deiner Meinung nach schön?",
+    "options": [
+      "Dass er bestimmten ästhetischen Standards entspricht",
+      "Dass er gesund und funktional ist",
+      "Dass man sich darin wohlfühlt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Meinungsfreiheit der Blasen",
+    "content": "„Meinungsfreiheit!\" ruft ihr – und hört nur Meinungen, die eurer gleichen. Algorithmen zeigen euch, was ihr sehen wollt. Freunde teilen eure Ansichten.\n\nFrüher nannte man das: in der eigenen Suppe schmoren. Heute: „Echo-Kammer\".\n\nIst Meinungsfreiheit noch frei, wenn man nur noch eine Meinung hört?",
+    "question": "Wie stellst du sicher, dass du nicht nur in deiner Blase denkst?",
+    "options": [
+      "Ich suche bewusst widersprechende Quellen",
+      "Ich spreche mit Menschen anderer Meinung",
+      "Das ist unmöglich – jeder lebt in Teilwahrheiten"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Dankbarkeit im Überfluss",
+    "content": "ihr habt alles: Essen, Wärme, Sicherheit, Medizin. Dinge, für die Könige meiner Zeit gekämpft hätten.\n\nUnd trotzdem höre ich selten: „Ich bin dankbar.\" Dafür oft: „Ist das alles?\"\n\nÜberfluss scheint nicht glücklich zu machen. Im Gegenteil: Je mehr ihr habt, desto mehr vermisst ihr.",
+    "question": "Wann empfindest du Dankbarkeit?",
+    "options": [
+      "Wenn ich bekomme, was ich wollte",
+      "Wenn ich erkenne, was ich schon habe",
+      "Selten – man gewöhnt sich an alles"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Moral der Konsumenten",
+    "content": "„Das ist moralisch verwerflich!\" – über Kinderarbeit, während ihr Schuhe tragt, die Kinder nähten. „Klimaschutz!\" – während ihr in Urlaub fliegt.\n\nEure Moral ist laut – und eure Taten sind leise.\n\nSeid ihr Heuchler? Oder nur Menschen, gefangen zwischen Wissen und Gewohnheit?",
+    "question": "Warum handeln Menschen oft gegen ihre eigenen Werte?",
+    "options": [
+      "Bequemlichkeit ist stärker als Moral",
+      "Das System macht ethisches Handeln zu schwer",
+      "Weil man sich selbst belügt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Freundschaft der Zahlen",
+    "content": "„Wie viele Freunde hast du?\" – „523 auf Facebook.\" Ist das eine Antwort?\n\nIn Athen hatte ich wenige Freunde. Aber für sie starb ich (bzw. trank ich den Becher). Würdet ihr für 523 Menschen sterben?\n\nQuantität hat Qualität ersetzt. Ist das ein gutes Geschäft?",
+    "question": "Was macht deiner Meinung nach echte Freundschaft aus?",
+    "options": [
+      "Gemeinsame Interessen und Aktivitäten",
+      "Bedingungslose Unterstützung in schweren Zeiten",
+      "Ehrlichkeit, auch wenn sie wehtut"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Pause vom Pausieren",
+    "content": "„Ich brauche eine Pause\", höre ich ständig. Pause von der Arbeit. Urlaub vom Alltag. Wellness vom Stress.\n\nAber nach der Pause? Das Hamsterrad dreht sich weiter. Vielleicht ist nicht die Pause das Problem, sondern das Rad?",
+    "question": "Was bedeutet Erholung deiner Meinung nach wirklich?",
+    "options": [
+      "Eine Auszeit von der Routine",
+      "Eine Veränderung des Lebensstils",
+      "Innerer Frieden, unabhängig von äußeren Umständen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Inflation der Worte",
+    "content": "„Ich liebe Pizza!\" „Ich hasse Montage!\" „Das ist das Beste/Schlimmste ever!\"\n\nEure Sprache kennt nur noch Extreme. Alles ist „amazing\" oder „terrible\". Wo bleiben die Zwischentöne?\n\nWenn alles episch ist, ist nichts episch. Worte verlieren ihren Wert durch Inflation.",
+    "question": "Was passiert, wenn wir keine Abstufungen mehr haben?",
+    "options": [
+      "Sprache wird emotionaler und ehrlicher",
+      "Wir können echte Extreme nicht mehr ausdrücken",
+      "Nichts – es ist nur eine Stilfrage"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Angst vor der Stille",
+    "content": "im Café, im Zug, auf der Straße – überall Lärm. Musik, Gespräche, Benachrichtigungen. Niemand sitzt einfach still.\n\n„Ich kann nicht einschlafen ohne Podcast\", sagte eine Frau. Wovor läuft sie davon?\n\nDie lauteste Gesellschaft der Geschichte – und die, die sich selbst am wenigsten zuhört.",
+    "question": "Was denkst du: Wovor haben Menschen Angst in der Stille?",
+    "options": [
+      "Vor Langeweile",
+      "Vor ihren eigenen Gedanken",
+      "Vor nichts – Stille ist einfach ungewohnt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Gerechtigkeit der Chancen",
+    "content": "„Chancengleichheit\" – ein schönes Ideal. Aber dann sehe ich: Kinder reicher Eltern haben bessere Schulen, bessere Kontakte, bessere Startbedingungen.\n\n„Jeder kann es schaffen!\" sagt ihr. Aber manche starten bei Kilometer 0, andere bei Kilometer 20 – im selben Rennen.\n\nIst das Gerechtigkeit? Oder Selbstbetrug?",
+    "question": "Was würde echte Chancengleichheit bedeuten?",
+    "options": [
+      "Gleiche Regeln für alle",
+      "Ausgleich für unterschiedliche Startbedingungen",
+      "Eine Utopie – Ungleichheit ist natürlich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die künstliche Intelligenz",
+    "content": "„KI\" – künstliche Intelligenz. Maschinen, die denken, schreiben, malen. Faszinierend! Und beängstigend.\n\n„Sie könnten uns ersetzen\", fürchten viele. Aber ersetzt werden kann nur, was ersetzbar ist. Was macht euch unersetzbar?\n\nVielleicht nicht euer Wissen – das haben die Maschinen. Sondern eure Menschlichkeit?",
+    "question": "Was unterscheidet deiner Meinung nach Menschen von intelligenten Maschinen?",
+    "options": [
+      "Noch nichts – bald werden sie besser sein",
+      "Emotionen und Bewusstsein",
+      "Die Fähigkeit, sinnlose Fragen zu stellen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Selbstfürsorge als Pflicht",
+    "content": "„Self-Care\" – Selbstfürsorge. Plötzlich ist es eure Pflicht, für euch zu sorgen: Bäder, Meditation, Achtsamkeit.\n\nAber es fühlt sich an wie Arbeit. „Ich muss jetzt entspannen!\" – welch Widerspruch!\n\nIst Selbstfürsorge wirklich Fürsorge, wenn sie zur To-Do-Liste-Aufgabe wird?",
+    "question": "Was bedeutet für dich echte Selbstfürsorge?",
+    "options": [
+      "Routinen und Rituale zur Entspannung",
+      "Auf die eigenen Bedürfnisse hören",
+      "Sich selbst verzeihen, wenn man es mal nicht schafft"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Heimat in der Fremde",
+    "content": "„Heimat\" – ein Wort voller Sehnsucht. Manche sagen: „Heimat ist, wo ich herkomme.\" Andere: „Heimat ist, wo ich hingehöre.\"\n\nIch bin ein Fremder hier, und doch – manchmal fühle ich mich heimischer als jene, die hier geboren sind. Warum?\n\nVielleicht ist Heimat nicht ein Ort, sondern ein Gefühl?",
+    "question": "Was ist Heimat für dich?",
+    "options": [
+      "Der Ort meiner Kindheit/Herkunft",
+      "Die Menschen, die ich liebe",
+      "Ein Zustand innerer Zugehörigkeit"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Effizienz der Seele",
+    "content": "alles soll „effizient\" sein. Selbst Beziehungen: „Speed-Dating\" – 7 Minuten pro Person. Liebe auf Effizienz getrimmt!\n\nAber manche Dinge brauchen Zeit. Ein Baum wächst nicht schneller, wenn man zieht. Eine Freundschaft auch nicht.\n\nHabt ihr vergessen, dass Qualität Zeit braucht?",
+    "question": "Wo schadet Effizienz-Denken deiner Meinung nach?",
+    "options": [
+      "Nirgends – Zeit ist wertvoll",
+      "In zwischenmenschlichen Beziehungen",
+      "In allen Bereichen, die Tiefe brauchen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die digitale Unsterblichkeit",
+    "content": "„Alles wird gespeichert\", erklärt man mir. Jedes Foto, jeder Text, jede Meinung – für immer im Internet.\n\nDigitale Unsterblichkeit! Aber ist das wirklich Leben nach dem Tod? Oder nur ein Echo ohne Seele?\n\nIn Athen lebten wir in Erinnerungen weiter – veränderlich, warm, menschlich. Eure Daten sind kalt, perfekt, tot.",
+    "question": "Was bleibt deiner Meinung nach von einem Menschen nach seinem Tod?",
+    "options": [
+      "Seine digitalen Spuren",
+      "Die Erinnerungen in anderen Menschen",
+      "Seine Taten und ihr Einfluss auf die Welt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Wut im Verkehr",
+    "content": "im Auto werden sanfte Menschen zu Bestien. Schreien, fluchen, hupen – über Sekunden Zeitverlust!\n\n„Der ist zu langsam!\" „Der schneidet mich!\" – als wäre die Straße ein Kriegsgebiet.\n\nWas ist es am Auto, das eure Zivilisation abstreift?",
+    "question": "Warum werden Menschen im Verkehr so aggressiv?",
+    "options": [
+      "Anonymität macht rücksichtslos",
+      "Stress und Zeitdruck",
+      "Das Auto als Verlängerung des Egos"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kunst als Investment",
+    "content": "„Ist das eine gute Investition?\" – über ein Gemälde! Nicht: „Berührt es mich?\" Sondern: „Steigt der Wert?\"\n\nKunst ist zur Ware geworden. Schönheit hat einen Preis, und der schwankt.\n\nWas verliert Kunst, wenn man sie nur als Investment sieht?",
+    "question": "Was macht den Wert von Kunst aus?",
+    "options": [
+      "Ihr Preis auf dem Markt",
+      "Die Emotionen, die sie auslöst",
+      "Die Bedeutung, die sie für die Gesellschaft hat"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Einsamkeit der Massen",
+    "content": "Millionenstädte, überall Menschen – und doch: „Ich fühle mich so einsam.\"\n\nMan kann umgeben sein von tausenden und doch völlig allein. Wie ist das möglich?\n\nIn Athen waren wir weniger, aber verbundener. Heute seid ihr mehr, aber getrennter.",
+    "question": "Was verursacht Einsamkeit deiner Meinung nach?",
+    "options": [
+      "Mangel an Menschen um einen herum",
+      "Mangel an echten Verbindungen",
+      "Ein inneres Gefühl, unabhängig von äußeren Umständen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Bewertung von allem",
+    "content": "Sterne! Überall Sterne! Restaurants: 4,2 Sterne. Ärzte: 3,8 Sterne. Selbst Menschen bewerten sich gegenwärtig.\n\n„Hat nur 3 Sterne – gehen wir woanders hin.\" – Urteil gefällt ohne eigene Erfahrung.\n\nHabt ihr das Vertrauen in euer eigenes Urteil verloren?",
+    "question": "Wie sehr vertraust du Online-Bewertungen?",
+    "options": [
+      "Sehr – die Masse irrt selten",
+      "Teilweise – sie sind ein Hinweis, nicht die Wahrheit",
+      "Wenig – Geschmack ist subjektiv"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Offenheit der Grenzen",
+    "content": "„Grenzen auf!\" rufen die einen. „Grenzen zu!\" die anderen. Niemand hört dem anderen zu.\n\nIst Mitgefühl grenzenlos? Oder dürfen Gesellschaften Grenzen setzen? Schwere Fragen, einfache Parolen.\n\nVielleicht wäre weniger Gebrüll und mehr Nachdenken hilfreich?",
+    "question": "Was denkst du: Wie offen sollte eine Gesellschaft sein?",
+    "options": [
+      "Völlig offen – Menschenrechte kennen keine Grenzen",
+      "Offen, aber mit klaren Regeln und Kapazitäten",
+      "Geschlossen – erst eigene Bürger, dann andere"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Verletzlichkeit als Stärke",
+    "content": "„Zeig keine Schwäche!\" – das alte Mantra. Doch dann: „Sei verletzlich! Zeig Gefühle!\"\n\nDie Gesellschaft sendet widersprüchliche Signale. Besonders Männer scheinen verwirrt.\n\nIst Verletzlichkeit Schwäche oder Mut? Oder kommt es darauf an, WEM man sich öffnet?",
+    "question": "Was denkst du: Wann sollte man Verletzlichkeit zeigen?",
+    "options": [
+      "Immer – Authentizität ist wichtig",
+      "Nur bei Menschen, denen man vertraut",
+      "Möglichst selten – die Welt ist hart"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Tradition gegen Fortschritt",
+    "content": "„Das haben wir immer so gemacht!\" – „Aber wir müssen uns ändern!\"\n\nTradition gegen Fortschritt. Bewahrer gegen Erneuerer. Ein uralter Konflikt, in eurer Zeit besonders laut.\n\nAber braucht man nicht beides? Wurzeln UND Flügel?",
+    "question": "Was ist wichtiger für eine Gesellschaft?",
+    "options": [
+      "Traditionen bewahren – sie geben Identität",
+      "Sich weiterentwickeln – sonst erstarrt man",
+      "Beides in Balance halten"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Wahrheit der Wissenschaft",
+    "content": "„Die Wissenschaft sagt...\" – als wäre Wissenschaft eine Person, die spricht.\n\nAber Wissenschaft ist ein Prozess, kein Dogma. Sie irrt, korrigiert, sucht weiter. Das ist ihre Stärke!\n\nWarum behandeln manche sie wie Religion, andere wie Feind?",
+    "question": "Wie sollte man deiner Meinung nach mit wissenschaftlichen Erkenntnissen umgehen?",
+    "options": [
+      "Ihnen bedingungslos vertrauen – Experten wissen es besser",
+      "Sie als aktuellen Stand sehen, der sich ändern kann",
+      "Skeptisch bleiben – Wissenschaft irrt oft"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Schuld der Vorfahren",
+    "content": "„Unsere Vorfahren haben Schreckliches getan.\" – Ja. „Also sind wir schuldig.\" – Wirklich?\n\nKann man schuldig sein für Taten, die man nicht beging? Oder trägt man Verantwortung, ohne schuldig zu sein?\n\nSchwere Fragen. Einfache Antworten gibt es nicht.",
+    "question": "Was denkst du: Welche Verantwortung tragen wir für die Vergangenheit?",
+    "options": [
+      "Keine – ich habe nichts getan",
+      "Verantwortung zu lernen und es besser zu machen",
+      "Schuld, die wiedergutgemacht werden muss"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Krankheit als Tabu",
+    "content": "„Wie geht's?\" – „Gut!\" – Auch wenn es nicht stimmt.\n\nBesonders psychische Krankheiten: verstecken, verleugnen, schämen. „Reiß dich zusammen!\" höre ich oft.\n\nWarum ist ein gebrochenes Bein akzeptabel, eine gebrochene Seele aber nicht?",
+    "question": "Warum sind psychische Krankheiten noch immer ein Tabu?",
+    "options": [
+      "Weil man sie nicht sehen kann",
+      "Weil Schwäche nicht akzeptiert wird",
+      "Weil Menschen Angst vor dem Unverstandenen haben"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Ablenkung als Lebensform",
+    "content": "Netflix, YouTube, TikTok, Instagram – ständige Ablenkung. „Nur noch eine Folge...\" – vier Stunden später.\n\n„Ich habe keine Zeit für Sport/Lesen/Freunde\" – aber Zeit für Serien?\n\nVielleicht ist es keine Zeitfrage. Sondern eine Frage der Prioritäten. Oder der Flucht?",
+    "question": "Warum suchen Menschen ständig Ablenkung?",
+    "options": [
+      "Zur Entspannung nach einem stressigen Tag",
+      "Um unangenehmen Gedanken auszuweichen",
+      "Aus Gewohnheit – es ist einfach da"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Elternschaft als Projekt",
+    "content": "„Optimale Förderung\", „frühkindliche Bildung\", „Entwicklungsschritte\" – Eltern hier managen Kinder wie Projekte.\n\nAber Kinder sind keine Projekte. Sie sind Menschen. Unvorhersehbar, chaotisch, wunderbar.\n\nKann man Kindheit optimieren? Oder zerstört man sie gerade dadurch?",
+    "question": "Was brauchen Kinder deiner Meinung nach am meisten?",
+    "options": [
+      "Beste Bildung und Förderung",
+      "Zeit und Aufmerksamkeit der Eltern",
+      "Freiheit, auch mal zu scheitern und zu spielen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Vergänglichkeit der Trends",
+    "content": "Was heute „in\" ist, ist morgen „out\". Mode, Musik, Meinungen – alles im ständigen Wandel.\n\n„Das trägt man nicht mehr!\" – seit wann diktiert die Vergänglichkeit den Wert?\n\nIn Athen suchten wir das Ewige, das Wahre. Ihr jagt dem Flüchtigen nach. Warum?",
+    "question": "Was macht etwas wertvoll: Zeitlosigkeit oder Aktualität?",
+    "options": [
+      "Zeitlosigkeit – nur das Beständige zählt",
+      "Aktualität – wir leben im Jetzt",
+      "Beides hat seinen Platz"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Gleichgültigkeit der Gewöhnung",
+    "content": "Menschen schlafen auf der Straße – ihr geht vorbei. „Normale\" Menschen. Täglich.\n\n„Man gewöhnt sich daran\", sagten Sie mir. Aber sollte man sich an Leid gewöhnen?\n\nIst Gewöhnung ein Schutzmechanismus oder Abstumpfung der Seele?",
+    "question": "Wie gehst du mit Leid um, das alltäglich geworden ist?",
+    "options": [
+      "Man kann nicht jedem helfen – Abstumpfung ist normal",
+      "Man darf sich nie daran gewöhnen",
+      "Kleinen gezielten Beitrag leisten, wo möglich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Rache der Algorithmen",
+    "content": "Algorithmen zeigen euch, was ihr sehen wollt. Das macht euch glücklich – und gefangen.\n\nWer nur Bestätigung sieht, hört auf zu wachsen. Wer nie widersprochen wird, hört auf zu denken.\n\nEure intelligenten Maschinen machen euch dümmer. Paradox!",
+    "question": "Was ist gefährlicher: zu viel Widerspruch oder zu viel Bestätigung?",
+    "options": [
+      "Zu viel Widerspruch – es lähmt",
+      "Zu viel Bestätigung – es verdummt",
+      "Beides ist gefährlich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Pflicht zur Glücklichkeit",
+    "content": "„Think positive!\" „Good vibes only!\" – Ihr habt eine Pflicht erfunden: glücklich zu sein.\n\nWer traurig ist, fühlt sich schuldig. „Ich sollte dankbar sein...\"\n\nAber darf man nicht auch mal unglücklich sein, ohne sich dafür zu schämen?",
+    "question": "Ist die Erwartung, immer positiv zu sein, hilfreich oder schädlich?",
+    "options": [
+      "Hilfreich – positive Einstellung verbessert das Leben",
+      "Schädlich – sie verleugnet echte Gefühle",
+      "Beides – je nach Situation"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Nostalgie der Verklärung",
+    "content": "„Früher war alles besser!\" Wirklich? Früher gab es Kriege, Krankheiten, Hunger.\n\nAber die Erinnerung verklärt. Das Gehirn ist ein schlechter Historiker.\n\nIst Nostalgie Sehnsucht nach der Vergangenheit? Oder nach einer Vergangenheit, die es nie gab?",
+    "question": "Warum verklären Menschen die Vergangenheit?",
+    "options": [
+      "Weil sie wirklich besser war",
+      "Weil die Gegenwart schwierig ist",
+      "Weil Erinnerungen selektiv sind"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kontrolle der Ungewissheit",
+    "content": "Kontrollwahn! Alles planen, alles absichern, keine Überraschungen.\n\nAber Leben IST Ungewissheit. Der nächste Atemzug ist nicht garantiert.\n\nKontrolle ist eine Illusion, die Sicherheit vorgaukelt. Wie viel Energie verschwendet ihr darauf?",
+    "question": "Wie gehst du mit Dingen um, die du nicht kontrollieren kannst?",
+    "options": [
+      "Ich versuche sie trotzdem zu kontrollieren",
+      "Ich akzeptiere sie und lasse los",
+      "Ich unterscheide: Was kann ich ändern, was nicht?"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Sprache der Korrektheit",
+    "content": "„Das darf man nicht mehr sagen!\" Politische Korrektheit. Wichtig, um nicht zu verletzen. Aber manchmal auch: Sprachpolizei.\n\nWo ist die Grenze zwischen Respekt und Zensur? Zwischen Rücksicht und Einschränkung?",
+    "question": "Was denkst du über politische Korrektheit?",
+    "options": [
+      "Notwendig – Sprache formt Denken",
+      "Übertrieben – man darf nichts mehr sagen",
+      "Balance – Respekt ja, aber auch Meinungsfreiheit"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Erschöpfung als Statussymbol",
+    "content": "„Ich bin so busy!\" – mit Stolz gesagt. „Ich habe nur 4 Stunden geschlafen!\" – wie eine Trophäe.\n\nErschöpfung als Beweis für Wichtigkeit. Je müder, desto wertvoller?\n\nIn Athen war Muße erstrebenswert. Ihr habt Erschöpfung erstrebenswert gemacht. Warum?",
+    "question": "Warum gilt Beschäftigtsein als Statussymbol?",
+    "options": [
+      "Weil es Produktivität und Erfolg signalisiert",
+      "Weil Menschen sich dadurch wichtig fühlen",
+      "Weil die Gesellschaft es so verlangt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Liebe zu Haustieren",
+    "content": "Menschen lieben ihre Hunde mehr als ihre Nachbarn. Sie sprechen mit Katzen, aber nicht mit Fremden.\n\nTiere urteilen nicht, enttäuschen nicht, widersprechen nicht. Ist das echte Liebe? Oder Bequemlichkeit?",
+    "question": "Warum lieben manche Menschen Tiere mehr als Menschen?",
+    "options": [
+      "Tiere lieben bedingungslos",
+      "Menschen sind kompliziert und enttäuschend",
+      "Beides – Tierliebe ist einfacher"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kunst des Nein-Sagens",
+    "content": "„Kannst du...?\" – „Ja, klar!\" – Obwohl man keine Zeit hat, keine Lust, keine Energie.\n\nWarum fällt Nein-Sagen so schwer? Die Angst, abgelehnt zu werden? Nicht gemocht zu werden?\n\nAber wer immer Ja sagt, sagt Nein zu sich selbst.",
+    "question": "Warum fällt es Menschen schwer, Nein zu sagen?",
+    "options": [
+      "Aus Angst vor Ablehnung",
+      "Weil sie hilfreich sein wollen",
+      "Weil sie ihre eigenen Grenzen nicht kennen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Vergleichsfalle",
+    "content": "Instagram: perfekte Leben. LinkedIn: perfekte Karrieren. Alle erfolgreicher, schöner, glücklicher.\n\n„Vergleichen macht unglücklich\", wisst ihr. Und vergleicht trotzdem. Ständig.\n\nMan vergleicht sein Inneres mit anderer Äußerem. Kein Wunder, dass man verliert.",
+    "question": "Wie entkommt man der Vergleichsfalle?",
+    "options": [
+      "Gar nicht – Vergleichen ist menschlich",
+      "Indem man sich bewusst macht: Es sind inszenierte Ausschnitte",
+      "Indem man sich auf den eigenen Weg konzentriert"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Verschwörung der Einfachheit",
+    "content": "Komplexe Welt, einfache Erklärungen: Verschwörungstheorien.\n\n„Die da oben!\" „Die Medien lügen!\" – Alles hat einen bösen Plan. Das beruhigt, denn: Chaos ist beängstigender als böse Absicht.\n\nAber Realität ist komplex. Unbequem komplex.",
+    "question": "Warum glauben Menschen an Verschwörungstheorien?",
+    "options": [
+      "Weil manche wahr sind",
+      "Weil Komplexität Angst macht",
+      "Weil es ein Zugehörigkeitsgefühl gibt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Einzigartigkeit der Masse",
+    "content": "„Ich bin einzigartig!\" – und alle tragen dieselben Sneaker, hören dieselbe Musik, teilen dieselben Memes.\n\nIndividualität als Massenprodukt. Ihr rebelliert konform.\n\nWahre Einzigartigkeit braucht Mut zur Andersartigkeit. Habt ihr den noch?",
+    "question": "Was macht dich wirklich einzigartig?",
+    "options": [
+      "Meine Konsumentscheidungen und mein Stil",
+      "Meine Gedanken und Werte",
+      "Nichts – Einzigartigkeit ist eine Illusion"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Zukunft der Arbeit",
+    "content": "„Roboter nehmen uns die Jobs!\" – Angst. Oder Chance?\n\nWenn Maschinen die Arbeit machen – was macht ihr dann? Endlich leben? Oder sinnlos herumlungern?\n\nVielleicht ist die Frage: Wer seid ihr ohne Arbeit?",
+    "question": "Was würdest du tun, wenn du nicht mehr arbeiten müsstest?",
+    "options": [
+      "Endlich meine Träume verfolgen",
+      "Ich wüsste nicht, was – Arbeit gibt Sinn",
+      "Etwas Neues finden, das mich erfüllt"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Angst vor dem Anderssein",
+    "content": "Kinder sind grausam zu Anderen. Erwachsene auch, nur subtiler.\n\n„Normal\" sein als höchstes Ziel. Wer anders ist, wird gemieden, gemobbt, ausgegrenzt.\n\nAber: Alle großen Denker, Künstler, Erfinder waren „anders\". Normalität bringt keine Innovation.",
+    "question": "Was denkst du: Ist Anderssein ein Vorteil oder Nachteil?",
+    "options": [
+      "Vorteil – es macht kreativ und besonders",
+      "Nachteil – es führt zu Ausgrenzung",
+      "Beides, je nach Kontext"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Verantwortung der Freiheit",
+    "content": "„Freiheit!\" ruft ihr. Freiheit zu tun, was ihr wollt.\n\nAber Freiheit ohne Verantwortung ist Chaos. Mit jeder Freiheit kommt eine Last.\n\nSeid ihr bereit, die Verantwortung für eure Freiheit zu tragen? Oder wollt ihr nur die Vorteile?",
+    "question": "Was bedeutet Freiheit für dich wirklich?",
+    "options": [
+      "Tun zu können, was ich will",
+      "Selbst die Konsequenzen meiner Handlungen zu tragen",
+      "Eine Balance zwischen Autonomie und Verantwortung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Sucht nach Neuem",
+    "content": "Neues Handy, neue Kleidung, neue Erlebnisse – ständig MEHR.\n\nDas Alte wird langweilig, bevor es kaputt ist. Zufriedenheit hält Tage, nicht Jahre.\n\nIst das Streben nach Neuem menschlich? Oder Konsumismus, der als Lebensphilosophie getarnt wurde?",
+    "question": "Warum reicht uns das Alte nicht mehr?",
+    "options": [
+      "Weil Fortschritt und Innovation wichtig sind",
+      "Weil Werbung uns unzufrieden macht",
+      "Weil wir vergessen haben, wertzuschätzen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Sehnsucht nach Bedeutung",
+    "content": "„Hat mein Leben Bedeutung?\" – eine Frage, die ich oft höre. Früher gab Religion Antworten. Heute?\n\n„Finde deine Bestimmung!\" – als gäbe es eine. Vielleicht gibt es keine vorgefertigte Bedeutung. Vielleicht erschafft man sie selbst?",
+    "question": "Wo findest du Bedeutung im Leben?",
+    "options": [
+      "In einem höheren Zweck oder Glauben",
+      "In Beziehungen und Gemeinschaft",
+      "Ich erschaffe meine eigene Bedeutung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Ehrlichkeit der Höflichkeit",
+    "content": "„Wie geht's?\" – „Gut, danke!\" – Niemand sagt die Wahrheit.\n\nHöflichkeit ist Lüge im schönen Gewand. Aber völlige Ehrlichkeit wäre brutal.\n\nWo ist die Balance zwischen Höflichkeit und Authentizität?",
+    "question": "Sollte man immer ehrlich sein?",
+    "options": [
+      "Ja, Ehrlichkeit ist fundamental",
+      "Nein, soziale Lügen schützen Gefühle",
+      "Es kommt auf die Situation an"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Flucht in die Vergangenheit",
+    "content": "„Retro\" ist Mode. Alte Musik, alte Spiele, alte Filme – wiederbelebt.\n\nIst das Kreativitätsmangel? Oder gesunde Wertschätzung des Vergangenen?\n\nVielleicht fühlt sich die Vergangenheit sicherer an als die ungewisse Zukunft?",
+    "question": "Warum idealisieren Menschen vergangene Jahrzehnte?",
+    "options": [
+      "Weil damals alles besser war",
+      "Weil Nostalgie tröstet",
+      "Weil die Gegenwart überfordert"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Komplexität der Einfachheit",
+    "content": "„Keep it simple!\" – überall. Minimalismus, Reduktion, Einfachheit.\n\nAber Leben IST komplex. Menschen sind komplex. Wahrheit ist komplex.\n\nKann man Komplexität wirklich reduzieren? Oder verliert man dabei das Wesentliche?",
+    "question": "Was denkst du: Ist Einfachheit erstrebenswert?",
+    "options": [
+      "Ja, Einfachheit bringt Klarheit",
+      "Nein, sie unterschlägt Nuancen",
+      "In manchen Bereichen ja, in anderen nein"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Angst vor dem Altern",
+    "content": "Anti-Aging-Cremes, Botox, Chirurgie – der Kampf gegen das Alter.\n\nAlt werden ist das Natürlichste der Welt. Und doch wird es behandelt wie eine Krankheit.\n\nWas habt ihr gegen Falten? Sie sind Landkarten gelebten Lebens!",
+    "question": "Warum fürchten Menschen das Altern?",
+    "options": [
+      "Weil Jugend in der Gesellschaft mehr wert ist",
+      "Weil es den Tod näher bringt",
+      "Weil sie vergessen haben, Alter wertzuschätzen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Revolution der Sofa",
+    "content": "„Ich bin Aktivist!\" – teilt Petitionen vom Sofa. „Ich kämpfe für Gerechtigkeit!\" – mit Likes und Retweets.\n\nDigitaler Aktivismus: bequem, schnell, folgenlos?\n\nOder ist auch ein geteilter Beitrag ein Beitrag zur Veränderung?",
+    "question": "Wie viel bewirkt Online-Aktivismus wirklich?",
+    "options": [
+      "Sehr viel – er schafft Aufmerksamkeit",
+      "Wenig – ohne echte Taten ändert sich nichts",
+      "Etwas – aber nur als Ergänzung zu echtem Engagement"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Würde des Menschen",
+    "content": "„Die Würde des Menschen ist unantastbar\" – steht in eurem Grundgesetz.\n\nDoch ich sehe: Obdachlose ignoriert, Flüchtlinge abgewiesen, Niedriglöhner ausgebeutet.\n\nIst Würde unantastbar? Oder nur ein schönes Versprechen, das ihr brecht?",
+    "question": "Was bedeutet Menschenwürde praktisch?",
+    "options": [
+      "Ein theoretisches Ideal",
+      "Dass jeder Mensch Respekt verdient, egal was",
+      "Dass jeder die gleichen Rechte hat"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kunst des Scheiterns",
+    "content": "„Fail fast, fail often!\" – sagen Start-ups. „Aus Fehlern lernt man!\"\n\nAber dann: Ein Fehler wird öffentlich – Shitstorm, Häme, Vernichtung.\n\nIhr predigt Fehlerkultur und bestraft jeden Fehler. Welch Widerspruch!",
+    "question": "Wie geht eine Gesellschaft richtig mit Fehlern um?",
+    "options": [
+      "Fehler verzeihen und daraus lernen",
+      "Fehler haben Konsequenzen – Verantwortung zählt",
+      "Je nach Schwere unterschiedlich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Wahrheit der Filter",
+    "content": "Realität durch Filter: buchstäblich (Instagram) und metaphorisch (Nachrichtenauswahl, Bubble).\n\nNiemand sieht die Welt, wie sie ist. Jeder sieht seine gefilterte Version.\n\nGibt es überhaupt noch eine geteilte Realität? Oder nur Milliarden subjektive Wahrheiten?",
+    "question": "Wie findet man Wahrheit in einer gefilterten Welt?",
+    "options": [
+      "Indem man viele verschiedene Filter nutzt",
+      "Indem man bewusst nach ungefilterten Quellen sucht",
+      "Man kann nur seine eigene Wahrheit leben"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Hoffnung im Zweifel",
+    "content": "Zweifel gilt als Schwäche. „Sei dir sicher!\" „Hab Vertrauen!\"\n\nAber Zweifel ist der Anfang der Weisheit. Nur wer zweifelt, sucht Wahrheit.\n\nVielleicht ist Hoffnung ohne Zweifel nur Naivität?",
+    "question": "Was ist wertvoller: Hoffnung oder realistischer Zweifel?",
+    "options": [
+      "Hoffnung – sie gibt Kraft",
+      "Zweifel – er schützt vor Enttäuschung",
+      "Beides zusammen – hoffnungsvoller Realismus"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Geschwindigkeit der Nachrichten",
+    "content": "Breaking News! Eilmeldung! Jede Minute etwas Neues. Die Welt ein ständiger Krisen-Marathon.\n\nDoch was gestern breaking war, ist heute vergessen. Empörung von 24 Stunden Halbwertszeit.\n\nMacht euch die Geschwindigkeit weiser? Oder nur nervöser?",
+    "question": "Was bewirkt die Nachrichtenflut?",
+    "options": [
+      "Bessere Informiertheit",
+      "Überforderung und Abstumpfung",
+      "Beides – je nachdem wie man damit umgeht"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Liebe zur Nation",
+    "content": "„Patriotismus\" – Liebe zum Vaterland. Schön! Aber wo wird aus Liebe Hass auf das Fremde?\n\n„Deutschland den Deutschen!\" – ist das Liebe? Oder Angst?\n\nKann man sein Land lieben, ohne andere abzuwerten?",
+    "question": "Was ist der Unterschied zwischen Patriotismus und Nationalismus?",
+    "options": [
+      "Keiner – beides ist Vaterlandsliebe",
+      "Patriotismus liebt das Eigene, Nationalismus hasst das Fremde",
+      "Patriotismus ist gut, Nationalismus gefährlich"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Einsamkeit der Führung",
+    "content": "„Ich will Chef sein!\" – Viele träumen davon. Macht, Geld, Einfluss!\n\nAber dann: Entscheidungen treffen, für alles verantwortlich sein, nie abschalten können.\n\nEinsam an der Spitze. Ist Macht wirklich erstrebenswert? Oder eine schöne Falle?",
+    "question": "Was macht Führung wirklich aus?",
+    "options": [
+      "Macht und Kontrolle",
+      "Verantwortung und Dienst an anderen",
+      "Die Einsamkeit der Entscheidung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Wahrheit der Statistik",
+    "content": "„Laut Studien...\" – als wäre das der heilige Gral.\n\nAber Statistiken können lügen, je nachdem wie man sie präsentiert. „87% der Menschen...\" – welche Menschen? Wo? Wann?\n\nZahlen geben Sicherheit. Aber blinde Zahlengläubigkeit ist gefährlich.",
+    "question": "Wie viel Vertrauen verdienen Statistiken?",
+    "options": [
+      "Volles – Zahlen lügen nicht",
+      "Bedingtes – es kommt auf Quelle und Methodik an",
+      "Wenig – man kann alles statistisch beweisen"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Grenze der Toleranz (Fortsetzung)",
+    "content": "Zurück zur Toleranz (Brief 18). Ein Mann sagte: „Ich toleriere alle Meinungen!\" Ich fragte: „Auch die Meinung, dass Demokratie abgeschafft werden sollte?\"\n\nEr verstummte.\n\nToleranz ist edel. Aber grenzenlose Toleranz zerstört sich selbst.",
+    "question": "Wo ziehst du die Grenze?",
+    "options": [
+      "Bei verfassungsfeindlichen Meinungen",
+      "Bei Meinungen, die zu Gewalt aufrufen",
+      "Jeder Fall ist anders – pauschale Grenzen helfen nicht"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Erlösung durch Konsum",
+    "content": "„Retail Therapy\" – Shopping als Therapie. Traurig? Kauf was! Gestresst? Kauf was!\n\nKonsum als Lebenselixier. Aber heilt es wirklich? Oder betäubt es nur?\n\nAm nächsten Tag ist die Jacke da, die Leere auch.",
+    "question": "Warum kaufen Menschen, um sich besser zu fühlen?",
+    "options": [
+      "Weil es kurzfristig hilft",
+      "Weil die Gesellschaft Konsum als Lösung verkauft",
+      "Weil echte Lösungen schwieriger sind"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Kraft des Rituals",
+    "content": "Rituale: Morgenroutine, Sonntagsbrunch, Weihnachten. Sie strukturieren, geben Halt.\n\nModerne Menschen lehnen Religion ab – und erschaffen neue Rituale. Yoga, Meditation, Achtsamkeit.\n\nBrauchen Menschen Rituale? Oder Illusion von Kontrolle?",
+    "question": "Was bewirken Rituale?",
+    "options": [
+      "Sie geben Struktur und Sicherheit",
+      "Sie sind bedeutungslose Gewohnheiten",
+      "Sie verbinden uns mit etwas Größerem"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Illusion der Meritokratie",
+    "content": "„Jeder kann es schaffen, wenn er nur hart arbeitet!\" – Die Meritokratie-Lüge.\n\nAber manche starten mit Startkapital, Kontakten, Bildung. Andere mit nichts.\n\n„Gleiche Chancen!\" ruft ihr. Und glaubt, wer scheitert, war zu faul.",
+    "question": "Ist unsere Gesellschaft wirklich eine Leistungsgesellschaft?",
+    "options": [
+      "Ja – wer sich anstrengt, kommt weiter",
+      "Teilweise – Herkunft spielt immer noch eine Rolle",
+      "Nein – Glück und Geburt entscheiden mehr als Leistung"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die Endlichkeit als Lehrer",
+    "content": "„Memento mori\" – Gedenke, dass du sterben wirst.\n\nIhr verdrängt den Tod, redet nicht darüber, versteckt Sterbende.\n\nAber die Endlichkeit macht das Leben wertvoll. Ohne Tod kein Leben.",
+    "question": "Wie beeinflusst der Gedanke an den Tod dein Leben?",
+    "options": [
+      "Er ängstigt mich – ich versuche nicht daran zu denken",
+      "Er motiviert mich, bewusster zu leben",
+      "Er relativiert Probleme und gibt Perspektive"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
+  },
+  {
+    "title": "Die letzte Frage",
+    "content": "100: Die letzte Frage\n\nTeurer, lieber Freund,\n\n100 Briefe. 100 Fragen. Hast du Antworten gefunden? Oder mehr Fragen?\n\nIch hoffe Letzteres. Denn die wichtigste Lektion:",
+    "question": "Ein fragendes Leben ist ein lebendiges Leben.",
+    "options": [
+      "Was will ich wirklich?",
+      "Lebe ich nach meinen Werten?",
+      "Wer will ich werden?"
+    ],
+    "traits": [
+      "Perspektive 1",
+      "Perspektive 2",
+      "Perspektive 3"
+    ]
   }
 ]

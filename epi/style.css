@@ -75,3 +75,33 @@ input, select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radiu
 @keyframes spin { 100% { transform: rotate(360deg); } }
 .italic-msg { text-align: center; color: var(--brown-accent); font-style: italic; }
 .test-btn { display: block; margin: 15px auto; background: none; border: 1px solid #ccc; color: #999; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; }
+
+/* --- RESPONSIVE FIX: Entfernt das Mockup auf Handys --- */
+@media (max-width: 450px) {
+    body {
+        background-color: var(--bg-color); /* Hintergrundfarbe an App anpassen */
+        align-items: flex-start; /* Oben ausrichten statt mittig */
+    }
+
+    .phone-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .phone-frame {
+        width: 100vw;   /* Volle Breite des Handys */
+        height: 100vh;  /* Volle Höhe des Handys */
+        border: none;   /* Rahmen entfernen */
+        border-radius: 0; /* Abrundung entfernen */
+        box-shadow: none;
+    }
+
+    .notch {
+        display: none; /* Die schwarze Notch ausblenden */
+    }
+
+    .toolbar {
+        padding-top: 50px; /* Platz für die System-Statusleiste (Uhrzeit/Akku) lassen */
+    }
+}
+

@@ -1,8 +1,10 @@
 {
-  "name": "Epistulae - Sokratische Briefe",
-  "short_name": "Epistulae",
+  "name": "epistulae",
+  "short_name": "epistulae",
   "description": "100 philosophische Briefe des Sokrates aus dem heutigen Deutschland",
-  "start_url": "/",
+  "id": "/epi/",
+  "start_url": "/epi/",
+  "scope": "/epi/",
   "display": "standalone",
   "background_color": "#f5f1e8",
   "theme_color": "#8b7355",

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epistulae - Sokratische Briefe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-container">
+    <div class="phone-frame">
+        <div class="notch"></div>
+        
+        <div id="app">
+            <nav class="toolbar">
+                <span class="app-title">Epistulae</span>
+                <button id="settings-btn" onclick="toggleSettings()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </button>
+            </nav>
+
+            <main id="content-area">
+                <div id="wandering-view" class="hidden">
+                    <div class="spinner"></div>
+                    <p class="italic-msg">Sokrates wandert durch Germania...</p>
+                    <button onclick="forceNextLetter()" class="test-btn">Brief erzwingen</button>
+                </div>
+
+                <div id="active-letter">
+                    <div class="parchment-scroll">
+                        <p id="salutation" class="italic-secondary"></p>
+                        <p id="letter-content" class="main-text"></p>
+                        <div id="question-area" class="hidden">
+                            <hr class="divider">
+                            <p id="letter-question" class="question-text"></p>
+                            <div id="options-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="ad-placeholder-section">
+                <div class="ad-text">hier könnte die Werbung stehen die das Leben von Sokrates finanziert</div>
+            </footer>
+
+            <div id="settings-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Optionen</h2>
+                    <div class="form-group">
+                        <label>Dein Name:</label>
+                        <input type="text" id="user-name" placeholder="Name eingeben">
+                    </div>
+                    <div class="form-group">
+                        <label>Sokratisches Profil:</label>
+                        <p id="ai-profile-text" class="profile-note"></p>
+                    </div>
+                    <div class="form-group">
+                        <label>Zustellung:</label>
+                        <select id="frequency">
+                            <option value="sofort">Sofort</option>
+                            <option value="geplant">Zeitplan (Täglich)</option>
+                        </select>
+                    </div>
+                    <button onclick="saveAndCloseSettings()" class="close-btn">Speichern & Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,11 +1,21 @@
 :root {
+    /* Farben – ein durchgängiges Set */
     --zen-cream: #f5f1e8;
     --zen-stone: #3d3d3d;
     --zen-bronze: #8b7355;
     --zen-gold: #b8956a;
-    --zen-mist: rgba(184, 149, 106, 0.08);
+    --zen-mist: rgba(184, 149, 106, 0.12);
     --parchment: #ebe6d9;
     --shadow-soft: rgba(61, 61, 61, 0.1);
+    --shadow-card: 0 4px 24px rgba(61, 61, 61, 0.12);
+    --shadow-card-inset: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    /* Einheitliche Maße */
+    --radius: 12px;
+    --space: 20px;
+    --space-lg: 28px;
+    /* Overlay/Modal einheitlich */
+    --overlay-bg: rgba(61, 61, 61, 0.88);
+    --overlay-blur: 6px;
 }
 
 * { 
@@ -51,10 +61,10 @@ body {
 }
 
 /* Content & Scroll - Zen Atmosphere */
-#content-area { 
-    flex: 6; 
-    padding: 20px; 
-    overflow-y: auto; 
+#content-area {
+    flex: 6;
+    padding: var(--space);
+    overflow-y: auto;
     background: var(--zen-cream);
 }
 
@@ -73,7 +83,7 @@ body {
 .reading-progress-row {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 12px;
+    margin-bottom: var(--space);
 }
 
 .reading-progress {
@@ -82,14 +92,13 @@ body {
     opacity: 0.85;
 }
 
+/* Ein Stück Papier – ein Look für Brief, Onboarding und Modals */
 .parchment-scroll {
     background: var(--parchment);
-    padding: 30px; 
-    border-radius: 12px;
-    border: none;
-    box-shadow: 
-        0 2px 20px var(--shadow-soft),
-        inset 0 1px 0 rgba(255,255,255,0.5);
+    border-radius: var(--radius);
+    border: 1px solid var(--zen-mist);
+    box-shadow: var(--shadow-card), var(--shadow-card-inset);
+    padding: var(--space-lg);
     position: relative;
 }
 
@@ -102,16 +111,15 @@ body {
     letter-spacing: 0.01em;
 }
 
-.italic-secondary { 
-    color: var(--zen-bronze); 
-    font-style: italic; 
-    margin-bottom: 20px;
-    font-size: 0.95rem;
-    opacity: 0.9;
+.letter-salutation {
+    color: var(--zen-bronze);
+    font-style: italic;
+    margin-bottom: var(--space);
+    opacity: 0.95;
 }
 
 .letter-signature {
-    margin-top: 28px;
+    margin-top: var(--space-lg);
     margin-bottom: 0;
     font-style: italic;
     color: var(--zen-bronze);
@@ -120,45 +128,58 @@ body {
     opacity: 0.9;
 }
 
-.divider { 
-    border: 0; 
-    border-top: 1px solid var(--zen-mist);
-    margin: 30px 0;
-    opacity: 0.6;
+/* Button unter dem Brief */
+.answer-btn {
+    margin-top: var(--space);
 }
-.question-text { 
-    font-style: italic; 
-    color: var(--zen-bronze); 
-    font-size: 1.05rem; 
-    text-align: center; 
-    margin-bottom: 25px;
-    font-weight: 500;
+
+/* Frage-Modal (kein Teil des Briefes – normale Schrift) */
+.question-modal-content {
+    max-width: 380px;
+}
+
+.modal-question-text {
+    font-family: "Crimson Text", "Georgia", serif;
+    font-size: 1.1rem;
     line-height: 1.6;
-    min-height: 1.6em;
+    color: var(--zen-stone);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    font-style: italic;
+}
+
+#modal-options-list .option-btn {
+    margin-bottom: 10px;
+}
+
+#modal-options-list .option-btn:last-child {
+    margin-bottom: 0;
 }
 
 .option-btn {
-    display: block; 
-    width: 100%; 
-    padding: 16px 20px; 
-    margin-bottom: 12px;
-    background: rgba(255,255,255,0.7);
+    display: block;
+    width: 100%;
+    padding: 14px var(--space);
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.75);
     border: 1px solid var(--zen-mist);
-    border-radius: 12px; 
+    border-radius: var(--radius);
     font-family: "Crimson Text", "Georgia", serif;
     font-size: 1rem;
     color: var(--zen-stone);
-    cursor: pointer; 
-    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.25s ease;
     text-align: left;
     box-shadow: 0 2px 8px var(--shadow-soft);
 }
-.option-btn:hover { 
+
+.option-btn:hover {
     background: #fff;
     border-color: var(--zen-bronze);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-soft);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-soft);
 }
+
 .option-btn:active {
     transform: translateY(0);
 }
@@ -174,26 +195,26 @@ body {
     border-color: var(--zen-mist);
 }
 
-/* Werbebanner + Footer */
 .ad-banner {
-    margin: 0 20px 12px;
-    padding: 14px 16px;
-    border: 1px dashed var(--zen-bronze);
-    border-radius: 10px;
+    margin: 0 var(--space) 12px;
+    padding: 12px var(--space);
+    border: 1px dashed var(--zen-mist);
+    border-radius: var(--radius);
     text-align: center;
     color: var(--zen-bronze);
-    opacity: 0.75;
-    background: rgba(255,255,255,0.45);
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
     text-transform: lowercase;
 }
 
 .site-footer {
     display: flex;
     justify-content: center;
-    gap: 18px;
-    padding: 14px 20px 18px;
+    gap: var(--space);
+    padding: var(--space);
     border-top: 1px solid var(--zen-mist);
-    background: linear-gradient(0deg, var(--zen-cream) 0%, transparent 100%);
+    background: var(--zen-cream);
 }
 
 .footer-link {
@@ -217,34 +238,35 @@ body {
 
 /* Modal & UI - Zen Style */
 .hidden { display: none !important; }
-.modal { 
+.modal {
     position: fixed;
     inset: 0;
-    background: rgba(61, 61, 61, 0.85);
-    backdrop-filter: blur(4px);
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    background: var(--overlay-bg);
+    backdrop-filter: blur(var(--overlay-blur));
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
     animation: fadeIn 0.3s ease;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-.modal-content { 
+
+.modal-content {
     background: var(--parchment);
-    padding: 30px; 
-    border-radius: 20px; 
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    border: 1px solid var(--zen-mist);
+    box-shadow: var(--shadow-card), var(--shadow-card-inset);
     width: 85%;
-    max-width: 320px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-    border: 1px solid var(--zen-gold);
+    max-width: 340px;
 }
 
 .legal-modal-content {
-    width: 92%;
-    max-width: 560px;
+    max-width: 520px;
     max-height: 80vh;
     overflow-y: auto;
 }
@@ -263,14 +285,17 @@ body {
     color: var(--zen-bronze);
 }
 .modal-content h2 {
-    font-family: "Crimson Text", serif;
+    font-family: "Crimson Text", "Georgia", serif;
     color: var(--zen-bronze);
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.3rem;
+    margin-bottom: var(--space);
     text-align: center;
     font-weight: 600;
 }
-.form-group { margin-bottom: 18px; }
+
+.form-group {
+    margin-bottom: var(--space);
+}
 .form-group label { 
     display: block; 
     font-size: 0.85rem; 
@@ -278,18 +303,21 @@ body {
     margin-bottom: 8px;
     font-weight: 500;
 }
-input, select { 
-    width: 100%; 
-    padding: 12px; 
+input,
+select {
+    width: 100%;
+    padding: 12px;
     border: 1px solid var(--zen-mist);
-    border-radius: 10px;
-    background: rgba(255,255,255,0.8);
-    font-family: "Crimson Text", serif;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.8);
+    font-family: "Crimson Text", "Georgia", serif;
     font-size: 1rem;
     color: var(--zen-stone);
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
-input:focus, select:focus {
+
+input:focus,
+select:focus {
     outline: none;
     border-color: var(--zen-bronze);
     background: #fff;
@@ -302,27 +330,36 @@ input:focus, select:focus {
     background: rgba(184, 149, 106, 0.1);
     border-radius: 8px;
 }
-.close-btn { 
-    width: 100%; 
-    padding: 14px; 
+/* Primär-Button – überall derselbe (Schliessen, Weiter, Dialog beginnen) */
+.btn-primary,
+.close-btn,
+.onboarding-btn {
+    width: 100%;
+    padding: 14px var(--space);
     background: var(--zen-bronze);
     color: var(--zen-cream);
-    border: none; 
-    border-radius: 12px; 
+    border: none;
+    border-radius: var(--radius);
     cursor: pointer;
-    font-family: "Crimson Text", serif;
+    font-family: "Crimson Text", "Georgia", serif;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-    box-shadow: 0 4px 12px var(--shadow-soft);
+    transition: all 0.25s ease;
+    margin-top: var(--space);
+    box-shadow: var(--shadow-soft);
 }
-.close-btn:hover {
+
+.btn-primary:hover,
+.close-btn:hover,
+.onboarding-btn:hover {
     background: var(--zen-gold);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px var(--shadow-soft);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-card);
 }
-.close-btn:active {
+
+.btn-primary:active,
+.close-btn:active,
+.onboarding-btn:active {
     transform: translateY(0);
 }
 
@@ -372,4 +409,192 @@ input:focus, select:focus {
 .test-btn:hover {
     opacity: 1;
     border-color: var(--zen-bronze);
+}
+
+/* Onboarding & Willkommen – gleicher Overlay wie Modals */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--overlay-bg);
+    backdrop-filter: blur(var(--overlay-blur));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    animation: fadeIn 0.35s ease;
+}
+
+.overlay-content {
+    width: 90%;
+    max-width: 420px;
+    padding: var(--space);
+}
+
+.onboarding-step {
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gleiches Papier wie .parchment-scroll */
+.story-parchment,
+.form-parchment {
+    background: var(--parchment);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    border: 1px solid var(--zen-mist);
+    box-shadow: var(--shadow-card), var(--shadow-card-inset);
+}
+
+.story-text {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--zen-stone);
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.form-parchment h2 {
+    font-family: "Crimson Text", "Georgia", serif;
+    color: var(--zen-bronze);
+    font-size: 1.35rem;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    font-weight: 600;
+}
+
+.gender-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    padding: 12px var(--space);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--zen-mist);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 1rem;
+}
+
+.radio-label:hover {
+    background: #fff;
+    border-color: var(--zen-bronze);
+    transform: translateX(4px);
+}
+
+.radio-label input[type="radio"] {
+    width: auto;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: var(--zen-bronze);
+}
+
+.radio-label span {
+    flex: 1;
+}
+
+/* Willkommens-Nachricht – gleicher Stil wie andere Schritte */
+.welcome-content .story-parchment {
+    padding: var(--space-lg);
+}
+
+/* Sokratische Pause – Meditative Wanderansicht */
+#wandering-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: var(--space-lg);
+}
+
+.meditation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+}
+
+.pulsing-circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--zen-bronze);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    opacity: 0.3;
+    animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+.meditative-text {
+    font-family: "Crimson Text", "Georgia", serif;
+    font-size: 1.3rem;
+    color: var(--zen-bronze);
+    font-style: italic;
+    line-height: 1.8;
+    min-height: 3em;
+    transition: opacity 1.5s ease-in-out;
+    opacity: 0;
+}
+
+.status-subtext {
+    font-size: 0.75rem;
+    color: var(--zen-bronze);
+    opacity: 0.6;
+    margin-top: var(--space);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Schreibschrift & wandernde Feder (System-Schriften, gleiche Farbe wie Rest) */
+.script-font {
+    font-family: "Segoe Print", "Noteworthy", "Apple Chancery", "Lucida Handwriting", cursive;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--zen-stone);
+    white-space: pre-wrap;
+}
+
+.letter-body-container {
+    display: inline-block;
+    width: 100%;
+}
+
+#quill-pen {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: text-bottom;
+    color: var(--zen-bronze);
+    animation: writingWiggle 0.5s infinite alternate ease-in-out;
+}
+
+#quill-pen.hidden {
+    display: none !important;
+}
+
+@keyframes writingWiggle {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-3px) rotate(5deg); }
 }

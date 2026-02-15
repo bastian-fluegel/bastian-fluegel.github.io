@@ -8,13 +8,67 @@
     <title>Epistulae - Sokratische Briefe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Onboarding Overlay -->
+    <div id="onboarding-overlay" class="overlay hidden" aria-hidden="true">
+        <div class="overlay-content">
+            <div id="onboarding-story" class="onboarding-step">
+                <div class="story-parchment">
+                    <p class="story-text">
+                        Sokrates ist in unsere Zeit gereist und sucht einen Begleiter für seine Dialoge. 
+                        Er möchte dich kennenlernen.
+                    </p>
+                </div>
+                <button type="button" class="onboarding-btn" id="story-next-btn">Weiter</button>
+            </div>
+
+            <div id="onboarding-form" class="onboarding-step hidden">
+                <div class="form-parchment">
+                    <h2>Wer bist du?</h2>
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="user-name">Dein Name</label>
+                            <input type="text" id="user-name" name="name" placeholder="Wie darf Sokrates dich nennen?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Dein Geschlecht</label>
+                            <div class="gender-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="m" required>
+                                    <span>männlich</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="f" required>
+                                    <span>weiblich</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="n" required>
+                                    <span>divers</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="onboarding-btn">Dialog beginnen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Willkommens-Nachricht für wiederkehrende Besuche -->
+    <div id="welcome-message" class="overlay hidden" aria-hidden="true">
+        <div class="overlay-content welcome-content">
+            <div class="story-parchment">
+                <p id="welcome-text" class="story-text"></p>
+            </div>
+        </div>
+    </div>
+
     <div id="app">
             <nav class="toolbar">
                 <span class="app-title">Epistulae</span>
@@ -24,17 +78,32 @@
                 <div class="reading-progress-row">
                     <span id="reading-progress" class="reading-progress">0 / 100 gelesen</span>
                 </div>
+                
+                <!-- Sokratische Pause (Wandern zwischen Briefen) -->
+                <div id="wandering-view" class="hidden">
+                    <div class="meditation-container">
+                        <div class="pulsing-circle"></div>
+                        <p id="wandering-thought" class="meditative-text"></p>
+                        <p class="status-subtext">Sokrates setzt seinen Weg fort...</p>
+                    </div>
+                </div>
+
                 <div id="active-letter">
                     <div class="parchment-scroll">
-                        <p id="salutation" class="italic-secondary"></p>
-                        <p id="letter-content" class="main-text"></p>
-                        <p id="letter-signature" class="letter-signature"></p>
-                        <div id="question-area">
-                            <hr class="divider">
-                            <p id="letter-question" class="question-text"></p>
-                            <div id="options-list" class="options-list"></div>
+                        <p id="salutation" class="script-font letter-salutation"></p>
+                        <div class="letter-body-container">
+                            <span id="typed-text" class="script-font"></span>
+                            <span id="quill-pen" class="hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.4901 3.04906C20.4901 3.04906 21.4668 4.02567 21.4668 5.49065C21.4668 6.95563 20.5034 10.4251 18.0383 14.8183C15.5731 19.2114 11.4232 21.9509 11.4232 21.9509L8.98157 20.9743C8.98157 20.9743 10.9352 15.6022 14.3535 11.2091C17.7719 6.81587 20.4901 3.04906 20.4901 3.04906Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.4232 21.9509C11.4232 21.9509 8.00487 20.486 6.53985 17.5561C5.07483 14.6263 5.56316 10.718 7.51677 8.27638" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.08667 20.486H6.5286" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
                         </div>
+                        <p id="letter-signature" class="letter-signature script-font"></p>
                     </div>
+                    <button type="button" id="answer-question-btn" class="btn-primary answer-btn hidden">Frage beantworten</button>
                 </div>
             </main>
 
@@ -59,6 +128,13 @@
                         </p>
                     </div>
                     <button type="button" class="close-btn" data-modal-close>Schliessen</button>
+                </div>
+            </div>
+
+            <div id="question-modal" class="modal hidden" aria-hidden="true">
+                <div class="modal-content question-modal-content">
+                    <p id="modal-question-text" class="modal-question-text"></p>
+                    <div id="modal-options-list" class="options-list"></div>
                 </div>
             </div>
 
